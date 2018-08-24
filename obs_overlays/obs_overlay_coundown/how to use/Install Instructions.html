@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Install Instructions</title>
+<style>
+body{width:80%;margin:0 auto;background-color:#f1f1f1;}
+.wrapper{background-color:#fff;color:#777;margin:20px auto 10px auto;box-shadow:0 0 8px #999;font-family:Century Gothic, Tahoma, Geneva, sans-serif;}
+
+a:link,a:visited{color:#09C;}a:hover {color:#F39;}
+.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#fb89ff;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #ccc;}* {box-sizing: border-box;}html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cl-"] {float: left;padding: 15px;border: 0px solid red;}.cl-1 {width: 8.33%;}.cl-2 {width: 16.66%;}.cl-3 {width: 25%;}.cl-4 {width: 33.33%;}.cl-5 {width: 41.66%;}.cl-6 {width: 50%;}.cl-7 {width: 58.33%;}.cl-8 {width: 66.66%;}.cl-9 {width: 75%;}.cl-10 {width: 83.33%;}.cl-11 {width: 91.66%;}.cl-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.shadow img{-webkit-transition:all 0.3s;transition:all 0.3s;}.shadow img:hover{-webkit-transform:scale(1.1,1.1);transform:scale(1.1,1.1);-webkit-box-shadow:0 12px 16px -6px #000;box-shadow:0 12px 16px -6px #000;} .square{line-height:normal;margin-left:5px;margin-right:6px;text-align:center;padding:1px 4px 2px;background-color:#444;color:#f1f1f1;font-family:Verdana, Geneva, Camgirl Live Editor, sans-serif;}
+
+.footer{background-color:#222;padding:10px 0 5px;font-size:13px;color:#ccc;font-family:Century Gothic, Tahoma, Geneva, sans-serif;}
+.tab #mediasource,.tab #createnew,.tab #browse,.tab #position,.tab #markup{display:none;-webkit-animation:fadeInScale 1.2s ease-in-out;-moz-animation:fadeInScale 1.2s ease-in-out;-o-animation:fadeInScale 1.2s ease-in-out;-ms-animation:fadeInScale 1.2s ease-in-out;animation:fadeInScale 1.2s ease-in-out;z-index:500;font-size:20px;color:#888;font-family:Century Gothic, Arial, Helvetica, Camgirl Live Editor, sans-serif;}
+.tab #mediasource:target,.tab #createnew:target,.tab #browse:target,.tab #position:target,.tab #markup:target{display:block;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.90);z-index:1001;}
+textarea{display:block;max-width:97%;width:97%;max-height:300px;height:300px; outline:none;border:0;background-color:#222;color:#f1f1f1;font-size:15px;margin:10px auto 13px 3px;}
+code{font-size:17px;margin-left:6px;margin-right:6px;background-color:#95CAFF;padding:0 5px;text-align:center;}
+
+@-webkit-keyframes fadeInScale {0% {-webkit-transform:scale(0.6);}100% { -webkit-transform: scale(1);}}
+@-moz-keyframes fadeInScale {0% { -moz-transform: scale(0.6);}100% { -moz-transform: scale(1);}}
+@-o-keyframes fadeInScale {0% { -o-transform: scale(0.6);}100% { -o-transform: scale(1);}}
+@-ms-keyframes fadeInScale {0% { -ms-transform: scale(0.6);}100% { -ms-transform: scale(1);}}
+@keyframes fadeInScale {0% { transform: scale(0.6);}100% { transform: scale(1);}}
+@media only screen and (max-width: 728px){body{margin-top:10px;font-size:13px;color:#666;font-family:Verdana, Geneva, Camgirl Live Editor, sans-serif;}[class*="cl-"]{width:100%;}img{display:block;width:100%;height:auto;margin:0 auto;}}
+
+
+*{text-decoration:none;}
+* html .clearfix {height:1%;}
+</style>
+</head>
+
+<body>
+
+
+<div class="cl-12 wrapper">
+
+<div class="cl-12 tcenter"><h1>OBS overlay - Countdown</h1></div>
+
+<div class="cl-6">
+<h2>About this overlay</h2>
+<p>This overlay is showing a countdown on top of the stream.</p>
+<p>The overlay source is a web page format which includes the markup code and editable text</p>
+<p>Install and use process is not complex and does not require external resources because all files are inside downloaded folder.</p>
+</div>
+
+<div class="cl-6 imgresp tcenter shadow"><a href="assets/step5_obs_cover.jpg" target="_blank"><img src="assets/step5_obs_cover.jpg" alt="cover overlay"/></a></div>
+
+
+<div class="cl-12">
+<h3>Install instructions</h3>
+<p><strong>How to use this overlay and how to edit it?</strong></p>
+<p>In order to edit the content of the <a href="../Countdown.html" target="_blank">Countdown.html</a> you must edit the source of the web page. Notepad++ (Windows users) or TextWrangler (MAC users) will do the job.</p>
+<p>To use this overlay on your stream follow the install steps suggested below</p>
+<p>
+<ol class="tab">
+<li>Open OBS</li>
+<li>From <strong>Sources</strong> zone click the <span class="square">+</span></li>
+<li id="ink">Next step is to select <strong>Browser</strong> from available options [<a href="#mediasource">screenshot</a>]
+<a href="#ink" class="imgresp"><img src="assets/step1_obs_browser.jpg" id="mediasource" /></a></li>
+<li><strong>Create New</strong> will show up, give it a name, easy to spot [<a href="#createnew">screenshot</a>]
+<a href="#ink" class="imgresp"><img src="assets/step2_obs_rename.jpg" id="createnew" /></a></li>
+<li><strong>Local File - Browse</strong>. Browse for the file <a href="../Countdown.html" target="_blank">Countdown.html</a>. Make sure you select Local File option [<a href="#browse">screenshot</a>]
+<a href="#ink" class="imgresp"><img src="assets/step3_obs_localfile.jpg" id="browse" /></a><br/>Settings visible in screenshot</li>
+<li>Drag the red corners to fit your main screen source for better position [<a href="#position">screenshot</a>]
+<a href="#ink" class="imgresp"><img src="assets/step4_obs_position_overlay.jpg" id="position" /></a>
+<li>Optional, you can play with Transition and Fade Transition options when triggering this overlay, it is up to you</li>
+</ol>
+</p>
+</div>
+
+<div class="cl-12">
+<h2>Editing the source code</h2>
+<p>As mentioned above, the  overlay can be edited using any HTML/CSS editor (WYSIWYG) like Notepad++ or TextWrangler.</p>
+<p>Open the html file in your favorite editor and alter the markup codes or edit text ...</p>
+<p>The HTML markup for contdown timer:</p>
+<textarea spellcheck="false"><div id="hms" class="cl-12 tcenter orange">00:10:15</div></textarea>
+
+
+<p>Feel free to play with the markup code and add your own custom texts or images if you like.</p>
+
+<p><strong>How to set the timer's countdown</strong></p>
+<p>Open the html page using Notepad++ or TexWrangler (or any other WYSIWYG editor) and search for this particular piece of code:</p>
+<code>&lt;div id=&quot;hms&quot; class=&quot;cl-12 tcenter orange&quot;&gt;00:10:15&lt;/div&gt;</code>
+<p>Change the digits manually<br/>
+<em>00:15:22</em> - will start the contdown 0 hours 15 minutes and 22 seconds<br/>
+<em>01:25:32</em> - will start the contdown 1 hour 25 minutes and 32 seconds<br/>
+<em>00:05:12</em> - will start the contdown 0 hours 5 minutes and 12 seconds<br/>
+Default is <mark>00:10:15</mark> - 0 hours, 10 minutes and 15 second contdown<br/>
+DIGITS ONLY, no additional spaces, text or other characters
+</p>
+<p><strong>Style-it-up</strong></p>
+<p>Custom classes can be added in order to change the color and position of the countdown timer</p>
+<p>Edit the color using the class values:</p>
+<code>&lt;div id=&quot;hms&quot; class=&quot;cl-12 tcenter orange&quot;&gt;00:10:15&lt;/div&gt;</code>
+<p> change the orange class with <strong>green</strong> or <strong>blue</strong>  to make the digits green or blue</p>
+<p>Optional. You can also reposition the contdown using another set of classes</p>
+<p>Default is set to top: <code>&lt;div id=&quot;clock&quot; class=&quot;cl-12 timer no top&quot;&gt;</code></p>
+<p>Set to bottom: <code>&lt;div id=&quot;clock&quot; class=&quot;cl-12 timer no bottom&quot;&gt;</code></p>
+<p>Set to middle: <code>&lt;div id=&quot;clock&quot; class=&quot;cl-12 timer no middle&quot;&gt;</code></p>
+<p>Skip this suggestion if you like because you can reposition the overlay by dragging it on OBS</p>
+
+<p><strong>Edit the text visible at the end of the countdown</strong></p>
+<p>When the contdown ends a custom text shows up. You can edit this text from the source </p>
+<code>document.getElementById('clock').innerHTML='Thank You.... I will be online as soon as possible';</code>
+<p>Edit only the plain text between single quotes</p>
+</div>
+
+<div class="cl-12">
+<h2>Resources</h2>
+<p>All component elements, custom font and markup code is running from your PC/laptop, no additional external resources necessary</p>
+<ul>
+<li><a href="../Countdown.html" target="_blank">Countdown.html</a></li>
+<li class="tab"><a href="#markup">full markup code</a>
+<div id="markup"><div class="cl-12">
+<textarea spellcheck="false"><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Countdown OBS Overlay</title>
+<style>
+/**
+      Name: OBS overlay Countdown - 0.1 version
+      Concept: Dan N & Dellany
+      Design : Dan N
+      Coded by: Dan N
+      URL: www.camgirl.cloud
+      |----------------------------------  
+      Need help installing this OBS overlay?
+      Or maybe you want a custom design for your live stream?
+      cssmfc@bitrix24.com
+**/
+body{width:100%;padding:0;margin:0 auto; font-family: 'MicroFLF';color:#fff;overflow:hidden;}
+
+@font-face {
+  font-family: 'MicroFLF';
+  src: url('font/MicroFLF.eot?#iefix') format('embedded-opentype'),  url('font/MicroFLF.woff') format('woff'), url('font/MicroFLF.ttf')  format('truetype'), url('font/MicroFLF.svg#MicroFLF') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cl-"] {float: left;padding: 15px;border: 0px solid red;}.cl-1 {width: 8.33%;}.cl-2 {width: 16.66%;}.cl-3 {width: 25%;}.cl-4 {width: 33.33%;}.cl-5 {width: 41.66%;}.cl-6 {width: 50%;}.cl-7 {width: 58.33%;}.cl-8 {width: 66.66%;}.cl-9 {width: 75%;}.cl-10 {width: 83.33%;}.cl-11 {width: 91.66%;}.cl-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgrespon img{display:block;width:100%;height:auto;}
+
+
+
+#main{ font-family: 'MicroFLF';}
+#clock{color:#0F3;font-size:4vw;text-shadow:0 1px 1px #000,0 0 40px #fff,0 10px 50px #000;}
+.display{color:#f1f1f1;font-size:19px; text-transform:uppercase;background-color:rgba(0,0,0,0.30);}
+.hms{font-family: 'MicroFLF';}
+/*** Position ***/
+.top{position:fixed;top:0;left:0;background-color:rgba(0,0,0,0.70);}
+.bottom{position:fixed;bottom:0;left:0;background-color:rgba(0,0,0,0.70);}
+.middle{position:fixed;top:40%;left:0;background-color:rgba(0,0,0,0.70);}
+
+/*** Color of the countdown digits ***/
+.green{color:#0F3;}
+.orange{color: #F63;}
+.blue{color:#09C;}
+
+</style>
+</head>
+
+<body>
+
+
+<div id="main">
+
+
+<div id="clock" class="cl-12 timer no top">
+
+
+    <div id="hms" class="cl-12 tcenter orange">00:10:15</div>
+
+<!--- 
+Change the countdown format as you want, 00 hours : 10 minutes : 15 seconds
+NUMBERS ONLY, grouped by two digits for each time element
+Exmples:
+00:05:00 - the countdown for 5 minutes
+00:13:33 - countdown of 13 minutes and 33 seconds
+01:45:19 - contdown from 1 hour, 45 minutes and 19 seconds
+--->
+<div class="cl-12 tcenter display">Hours - minutes - seconds</div>
+</div>
+
+
+
+</div>
+
+<script type="text/javascript">
+
+function count() {
+var startTime = document.getElementById('hms').innerHTML;
+var pieces = startTime.split(":");
+var time = new Date(); time.setHours(pieces[0]);
+time.setMinutes(pieces[1]);
+time.setSeconds(pieces[2]);
+var timedif = new Date(time.valueOf() - 1000);
+var newtime = timedif.toTimeString().split(" ")[0];
+document.getElementById('hms').innerHTML=newtime;
+if(newtime!=='00:00:00'){
+setTimeout(count, 1000);
+}else
+{
+document.getElementById('clock').innerHTML='Thank You.... I will be online as soon as possible';
+// Between siggle quotes add your custom text
+// If you have basic skills of HTML and CSS inline markup editing, you can add full markup here.... but I'd avoid using that
+// This is an example '<span style="color:green">Thank You</span>.... I will be online as soon as possible'
+}
+
+} 
+count();
+</script>
+
+</body>
+</html>
+</textarea></div>
+<div class="cl-12 tcenter"><a href="#ink">x Close</a></div>
+</div></li>
+</ul>
+</div>
+
+<div class="cl-12 tcenter">
+<p>If you have suggestions, questions or feedback, feel free to post on <a href="https://camgirl.cloud/support/forum/download/obs-overlays/" target="_blank">support forum community</a><br/> More overlays will be provided for download on <a href="https://camgirl.cloud/" target="_blank">Camgirl Live Editor</a></p>
+</div>
+</div>
+
+<div class="cl-12 footer tcenter"><p>free download provided by Dan N from <a href="https://camgirl.cloud/" target="_blank">Camgirl Live Editor</a></div>
+
+</body>
+</html>

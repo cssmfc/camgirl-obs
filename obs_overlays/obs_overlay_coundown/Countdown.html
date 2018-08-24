@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Countdown OBS Overlay</title>
+<style>
+/**
+      Name: OBS overlay Countdown - 0.1 version
+      Concept: Dan N & Dellany
+      Design : Dan N
+      Coded by: Dan N
+      URL: www.camgirl.cloud
+      |----------------------------------  
+      Need help installing this OBS overlay?
+      Or maybe you want a custom design for your live stream?
+      cssmfc@bitrix24.com
+**/
+body{width:100%;padding:0;margin:0 auto; font-family: 'MicroFLF';color:#fff;overflow:hidden;}
+
+@font-face {
+  font-family: 'MicroFLF';
+  src: url('font/MicroFLF.eot?#iefix') format('embedded-opentype'),  url('font/MicroFLF.woff') format('woff'), url('font/MicroFLF.ttf')  format('truetype'), url('font/MicroFLF.svg#MicroFLF') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cl-"] {float: left;padding: 15px;border: 0px solid red;}.cl-1 {width: 8.33%;}.cl-2 {width: 16.66%;}.cl-3 {width: 25%;}.cl-4 {width: 33.33%;}.cl-5 {width: 41.66%;}.cl-6 {width: 50%;}.cl-7 {width: 58.33%;}.cl-8 {width: 66.66%;}.cl-9 {width: 75%;}.cl-10 {width: 83.33%;}.cl-11 {width: 91.66%;}.cl-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgrespon img{display:block;width:100%;height:auto;}
+
+
+
+#main{ font-family: 'MicroFLF';}
+#clock{color:#0F3;font-size:4vw;text-shadow:0 1px 1px #000,0 0 40px #fff,0 10px 50px #000;}
+.display{color:#f1f1f1;font-size:19px; text-transform:uppercase;background-color:rgba(0,0,0,0.30);}
+.hms{font-family: 'MicroFLF';}
+/*** Position ***/
+.top{position:fixed;top:0;left:0;background-color:rgba(0,0,0,0.70);}
+.bottom{position:fixed;bottom:0;left:0;background-color:rgba(0,0,0,0.70);}
+.middle{position:fixed;top:40%;left:0;background-color:rgba(0,0,0,0.70);}
+
+/*** Color of the countdown digits ***/
+.green{color:#0F3;}
+.orange{color: #F63;}
+.blue{color:#09C;}
+
+</style>
+</head>
+
+<body>
+
+
+<div id="main">
+
+
+<div id="clock" class="cl-12 timer no top">
+
+
+    <div id="hms" class="cl-12 tcenter orange">00:10:15</div>
+
+<!--- 
+Change the countdown format as you want, 00 hours : 10 minutes : 15 seconds
+NUMBERS ONLY, grouped by two digits for each time element
+Exmples:
+00:05:00 - the countdown for 5 minutes
+00:13:33 - countdown of 13 minutes and 33 seconds
+01:45:19 - contdown from 1 hour, 45 minutes and 19 seconds
+--->
+<div class="cl-12 tcenter display">Hours - minutes - seconds</div>
+</div>
+
+
+
+</div>
+
+<script type="text/javascript">
+
+function count() {
+var startTime = document.getElementById('hms').innerHTML;
+var pieces = startTime.split(":");
+var time = new Date(); time.setHours(pieces[0]);
+time.setMinutes(pieces[1]);
+time.setSeconds(pieces[2]);
+var timedif = new Date(time.valueOf() - 1000);
+var newtime = timedif.toTimeString().split(" ")[0];
+document.getElementById('hms').innerHTML=newtime;
+if(newtime!=='00:00:00'){
+setTimeout(count, 1000);
+}else
+{
+document.getElementById('clock').innerHTML='Thank You.... I will be online as soon as possible';
+// Between siggle quotes add your custom text
+// If you have basic skills of HTML and CSS inline markup editing, you can add full markup here.... but I'd avoid using that
+// This is an example '<span style="color:green">Thank You</span>.... I will be online as soon as possible'
+}
+
+} 
+count();
+</script>
+
+</body>
+</html>
