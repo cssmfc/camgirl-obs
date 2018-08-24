@@ -13,6 +13,8 @@
 * [support and contact](README.md#contact)
 * [social network](README.md#links)
 
+:inbox_tray: [Download source code and full documentation](https://github.com/cssmfc/obs/releases/tag/v1.0)
+
 
 
 ### About
