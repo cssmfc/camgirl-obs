@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OBS Overlay - Top Tippers</title>
+<style>
+body{width:100%;padding:0;margin:0 auto; font-family: 'MicroFLF';color:#fff;overflow:hidden;}
+
+@font-face {
+  font-family: 'MicroFLF';
+  src: url('font/MicroFLF.eot?#iefix') format('embedded-opentype'),  url('font/MicroFLF.woff') format('woff'), url('font/MicroFLF.ttf')  format('truetype'), url('font/MicroFLF.svg#MicroFLF') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cl-"] {float: left;padding: 15px;border: 0px solid red;}.cl-1 {width: 8.33%;}.cl-2 {width: 16.66%;}.cl-3 {width: 25%;}.cl-4 {width: 33.33%;}.cl-5 {width: 41.66%;}.cl-6 {width: 50%;}.cl-7 {width: 58.33%;}.cl-8 {width: 66.66%;}.cl-9 {width: 75%;}.cl-10 {width: 83.33%;}.cl-11 {width: 91.66%;}.cl-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgrespon img{display:block;width:100%;height:auto;}
+.container{display:block;width:80%;height:auto;min-height:500px;margin:30px auto;text-align:center;position:fixed;top:0;left:1%;background-color:rgba(0,0,0,0.70);padding:20px;z-index:10000;}
+
+
+.model p{font-size:23px;}
+.anigraph{background-color:rgba(0,0,0,0.50);padding:10px 0 11px;-webkit-border-radius:10px 10px 0 0;border-radius:10px 10px 0 0;}
+.anigraph img{display:block;width:100%;height:auto;margin:0 auto;-webkit-animation-delay: 1.5s;-moz-animation-delay: 1.5s;-webkit-animation: list 2s forwards;-moz-animation: list 2s forwards;opacity:0;}
+
+.anigraph2{background-color:rgba(0,0,0,0.50);padding:10px 0 11px;-webkit-border-radius:10px 10px 0 0;border-radius:10px 10px 0 0;}
+.anigraph2 img{display:block;width:100%;height:auto;margin:0 auto;-webkit-animation-delay: 3.5s;-moz-animation-delay: 3.5s;-webkit-animation: list 3s forwards;-moz-animation: list 3s forwards;opacity:0}
+
+
+.premiums p{display:block;width:100%;height:auto;margin:0 auto;padding:0;text-align:center;line-height:normal;font-size:19px;} 
+
+.listed{overflow:hidden;height:auto;background-color:rgba(0,0,0,0.60);-webkit-box-shadow:inset 0 0 73px #000;box-shadow:inset 0 0 73px #000;}
+.listed p{display:block;width:98%;height:auto;-webkit-animation: goforit 1s 1s ease-in-out forwards;animation: goforit 1s 1s ease-in-out forwards; -webkit-transform:translate(0px, 0);transform:translate(0px, 0);position:relative;opacity:0;padding:7px 11px;background-repeat:no-repeat;background-size:20px 20px;background-position:-112px 0px;}
+.listed p:nth-child(1){display:block;-webkit-animation-delay: 1.9s;animation-delay: 1.9s;background-image:url(images/1crown.png);}
+.listed p:nth-child(2){display:block;-webkit-animation-delay: 2.9s;animation-delay: 2.9s;background-image: url(images/2award.png);}
+.listed p:nth-child(3){display:block;-webkit-animation-delay: 3.9s;animation-delay: 3.9s;background-image: url(images/3heart.png);}
+.listed p:nth-child(4){display:block;-webkit-animation-delay: 4.9s;animation-delay: 4.9s;background-image: url(images/4gent.png);}
+.listed p:nth-child(5){display:block;-webkit-animation-delay: 5.9s;animation-delay: 5.9s;background-image: url(images/5medal.png);}
+.listed p:nth-child(6){display:block;-webkit-animation-delay: 6.9s;animation-delay: 6.9s;background-image: url(images/6kiss.png);}
+.listed p:nth-child(7){display:block;-webkit-animation-delay: 7.9s;animation-delay: 7.9s;background-image: url(images/bag.png);}
+.listed p:nth-child(8){display:block;-webkit-animation-delay: 8.9s;animation-delay: 8.9s;background-image: url(images/bag.png);}
+
+.cover img{-webkit-animation: showcover 1.5s 1.5s ease-in-out forwards;animation: showcover 1.5s 1.5s ease-in-out forwards;-webkit-animation-delay: .4s;animation-delay: .4s;opacity:0;}
+
+.listone{background-image:url(images/bg_imgeffect.png);background-repeat:no-repeat;background-size:1px 1px;background-position:center;-webkit-animation: background 2s 2s ease-in-out forwards;animation: background 2s 2s ease-in-out forwards;-webkit-animation-delay: 1.4s;animation-delay: 1.4s;border-bottom:1px solid #9C3;}
+.listone2{background-image:url(images/bg_imgeffect2.png);background-repeat:no-repeat;background-size:1px 1px;background-position:center;-webkit-animation: background 2s 2s ease-in-out forwards;animation: background 2s 2s ease-in-out forwards;-webkit-animation-delay: 1.4s;animation-delay: 1.4s;border-bottom:1px solid #C33;}
+
+
+
+@-webkit-keyframes goforit {
+  0% {opacity:0.7;-webkit-transform:translate(-420px,0);transform:translate(-420px,0);background-position:-1px 10px;border-bottom:1px solid rgba(51,51,51,0.0);}
+  100% {opacity:1;-webkit-transform:translate(2px,0);transform:translate(2px,0);background-position:-1px 10px;border-bottom:1px solid rgba(51,51,51,1);}
+  }
+@keyframes goforit {
+  0% {opacity:0.7;-webkit-transform:translate(-420px,0);transform:translate(-420px,0);background-position:-1px 10px;border-bottom:1px solid rgba(51,51,51,0.0);}
+  100% {opacity:1;-webkit-transform:translate(2px,0);transform:translate(2px,0);background-position:-1px 10px;border-bottom:1px solid rgba(51,51,51,1);}
+  }
+
+
+@-webkit-keyframes list {
+  0% {-webkit-transform: translate(0px, -300px) rotateZ(-360deg); opacity:0.5;}
+  100% {-webkit-transform: translate(0px, 0px) rotateZ(0deg);  opacity:1}}
+  @keyframes list {
+  0% {transform: translate(0px, -300px) rotateZ(-360deg); opacity:0.5; }
+  100% {transform: translate(0px, 0px) rotateZ(0deg);  opacity:1;}}
+  
+@-webkit-keyframes showcover {
+    0% {-webkit-transform: translate(-3px, 0px) rotateY(-360deg) scale(0); opacity:0.5; }
+	100% {-webkit-transform: translate(0px, 0px) rotateY(0deg) scale(1.1,1.1);  opacity:1;}}
+
+
+@keyframes showcover {
+    0% {transform: translate(-3px, 0px) rotateY(-360deg) scale(0); opacity:0.5; }
+	100% {transform: translate(0px, 0px) rotateY(0deg) scale(1.1,1.1);  opacity:1;}}
+
+
+@-webkit-keyframes background {
+    0% {background-size:1px;}
+	100% {background-size:100% auto;}}
+
+
+@keyframes background {
+    0% {background-size:1px;}
+	100% {background-size:100% auto;}}
+
+@media print {html, body {display: none;  /* hide whole page */}}
+
+</style>
+</head>
+
+<body>
+
+
+
+<div id="main">
+
+
+<div class="container">
+  <div class="cl-3 imgrespon tcenter no">
+  <div class="cl-12 no tcenter model">
+<p>JOIN MY TROOPS</p>
+</div>
+<div class="cover">
+  <img src="images/mimg.png"/>
+ </div>
+<div class="cl-12 no tcenter model">
+<p>Model Name</p>
+</div>
+  </div>
+  
+  
+  <div class="cl-9 premiums">
+      <div class="cl-6 imgrespon">
+         <div class="cl-12 no tcenter anigraph listone"><img src="images/rank_specialist.png"/></div>
+            <div class="cl-12 listed first">
+            <div class="cl-12 no">
+            <p>Premium Username</p>
+            <p>Premium Username</p>
+            <p>Premium Username</p>
+            <p>Premium Username</p>
+            <p>Premium Username</p>
+            <p>Premium Username</p>
+            <p>Premium Username</p>
+            <p>Premium Username</p>
+            </div>
+          </div>
+      </div>
+      
+      <div class="cl-6 imgrespon">
+         <div class="cl-12 no tcenter anigraph2 listone2"><img src="images/ranks_sjmaj_army.png"/></div>
+            <div class="cl-12 listed second">
+            <div class="cl-12 no">
+            <p>Premium Username</p>
+            <p>Premium Username</p>
+            <p>Premium Username</p>
+            <p>Premium Username</p>
+            <p>Premium Username</p>
+            <p>Premium Username</p>
+            <p>Premium Username</p>
+            <p>Premium Username</p>
+            </div>
+           </div>
+      </div>
+      
+  </div>
+  
+  
+</div>
+
+</div>
+
+
+
+</body>
+</html>
