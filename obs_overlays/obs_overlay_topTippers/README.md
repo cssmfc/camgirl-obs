@@ -16,7 +16,7 @@
 ## :inbox_tray: [Download Source and full documentation](https://github.com/cssmfc/obs/releases/tag/v1.0.Army)
 
 ### About
-This OBS overlay shows animated content (using CSS3 keyframes) to power up a non-intercative modal.
+This OBS overlay shows animated content (using CSS3 keyframes) to power up a non-interactive modal.
 There are two premiums lists with editable **Premium Names** and icons - right side.
 In the left side of this overlay, the webcam performer can add their own image and **Model Name** 
 
