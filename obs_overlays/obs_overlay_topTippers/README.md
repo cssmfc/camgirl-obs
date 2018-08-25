@@ -98,8 +98,9 @@ Sample markup for one of the Premium lists available with this overlay
           </div>
       </div>
 ```
-The layout of this overlay is using responsive values defined by `cl-` class
-Each paracgraph shows an editable Premium Username with a custom icon in front of it.
+The layout of this overlay is using responsive values defined by `cl-` class.
+
+Each paragraph shows an editable **Premium Username** with a custom icon in front of it.
 
 
 **Install instructions and full documentation along with all necessary resources provided inside the downloaded file**
