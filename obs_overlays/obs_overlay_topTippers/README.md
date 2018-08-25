@@ -1,4 +1,4 @@
-# Camgirl Cloud - OBS overlay - Top Tippers - Army Themed overlay
+# OBS overlay - Top Tippers - v1.0.Army Themed overlay
 
 ![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_topTippers/how%20to%20use/assets/obs_cover_top_tippers.jpg)
 
@@ -13,7 +13,7 @@
 * [support and contact](README.md#contact)
 * [social network](README.md#links)
 
-
+:inbox_tray:[Download Source and full documentation](https://github.com/cssmfc/obs/releases/tag/v1.0.Army)
 
 ### About
 This OBS overlay shows animated content (using CSS3 keyframes) to power up a non-intercative modal.
