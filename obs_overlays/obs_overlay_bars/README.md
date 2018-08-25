@@ -1,6 +1,6 @@
 # OBS overlay - Fixed Bar
 
-![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_topTippers/how%20to%20use/assets/obs_cover_top_tippers.jpg)
+![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_bars/how%20to%20use/assets/cover_obs_overlay_bar.jpg)
 
 
 ### Index
@@ -52,21 +52,21 @@ To use this overlay on your stream follow the install steps suggested below
 1. Open **OBS** [download OBS if necessary](https://obsproject.com/)
 2. From **Sources** zone click the :heavy_plus_sign: sign/icon
 
-![New Source](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_topTippers/how%20to%20use/assets/obs-add-new-source.jpg)
+![New Source](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_bars/how%20to%20use/assets/obs-add-new-source.jpg)
 
 3. Next step is to select **Browser** from available options 
-![Select Browser](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_topTippers/how%20to%20use/assets/obs-select-source.jpg)
+![Select Browser](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_bars/how%20to%20use/assets/obs-select-source.jpg)
 
 4. **Create New** will show up, give it a name, easy to spot 
-![Rename](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_topTippers/how%20to%20use/assets/obs-rename-browser-source.jpg)
+![Rename](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_bars/how%20to%20use/assets/obs-rename-browser-source.jpg)
 
 5. **Local File** - Browse. **Browse** for the file Bars.html. Make sure you select **Local File** option 
-![Select Local File](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_topTippers/how%20to%20use/assets/obs-local-file.jpg)
+![Select Local File](https://github.com/cssmfc/obs/blob/master/obs_overlays/obs_overlay_bars/how%20to%20use/assets/obs-local-file.jpg)
  Settings visible in screenshot
  
 
 7. Drag the red corners to fit your main screen source for better position
-![Position](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_topTippers/how%20to%20use/assets/obs-position-overlay.jpg)
+![Position](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_bars/how%20to%20use/assets/obs-position-overlay.jpg)
 
 8. Optional, you can play with Transition and Fade Transition options when triggering this overlay, it is up to you.
 
