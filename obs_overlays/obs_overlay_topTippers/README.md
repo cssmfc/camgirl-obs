@@ -13,7 +13,7 @@
 * [support and contact](README.md#contact)
 * [social network](README.md#links)
 
-:inbox_tray:[Download Source and full documentation](https://github.com/cssmfc/obs/releases/tag/v1.0.Army)
+## :inbox_tray: [Download Source and full documentation](https://github.com/cssmfc/obs/releases/tag/v1.0.Army)
 
 ### About
 This OBS overlay shows animated content (using CSS3 keyframes) to power up a non-intercative modal.
