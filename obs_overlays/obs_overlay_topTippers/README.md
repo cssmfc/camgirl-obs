@@ -21,8 +21,11 @@ There are two premiums lists with editable **Premium Names** and icons - right s
 In the left side of this overlay, the webcam performer can add their own image and **Model Name** 
 
 **OBS overlay type:** browser
+
 **Source:** local
+
 **Coded:** HTML, CSS, images
+
 **Resources:** font used MicroFLF
 
 
