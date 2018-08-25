@@ -20,13 +20,13 @@ This OBS overlay shows animated content (using CSS3 keyframes) to power up a non
 There are two premiums lists with editable **Premium Names** and icons - right side.
 In the left side of this overlay, the webcam performer can add their own image and **Model Name** 
 
-**OBS overlay type:** browser
+* **OBS overlay type:** browser
 
-**Source:** local
+* **Source:** local
 
-**Coded:** HTML, CSS, images
+* **Coded:** HTML, CSS
 
-**Resources:** font used MicroFLF
+* **Resources:** font used MicroFLF, images
 
 
 :wrench: General install of OBS overlays downloaded form our platform:
