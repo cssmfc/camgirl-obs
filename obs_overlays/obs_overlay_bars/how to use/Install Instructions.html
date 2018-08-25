@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Install Instructions</title>
+<style>
+body{width:80%;margin:0 auto;background-color:#f1f1f1;}
+.wrapper{background-color:#fff;color:#777;margin:20px auto 10px auto;box-shadow:0 0 8px #999;font-family:Century Gothic, Tahoma, Geneva, sans-serif;}
+
+a:link,a:visited{color:#09C;}a:hover {color:#F39;}
+.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#fb89ff;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #ccc;}* {box-sizing: border-box;}html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cl-"] {float: left;padding: 15px;border: 0px solid red;}.cl-1 {width: 8.33%;}.cl-2 {width: 16.66%;}.cl-3 {width: 25%;}.cl-4 {width: 33.33%;}.cl-5 {width: 41.66%;}.cl-6 {width: 50%;}.cl-7 {width: 58.33%;}.cl-8 {width: 66.66%;}.cl-9 {width: 75%;}.cl-10 {width: 83.33%;}.cl-11 {width: 91.66%;}.cl-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.shadow img{-webkit-transition:all 0.3s;transition:all 0.3s;}.shadow img:hover{-webkit-transform:scale(1.1,1.1);transform:scale(1.1,1.1);-webkit-box-shadow:0 12px 16px -6px #000;box-shadow:0 12px 16px -6px #000;} .square{line-height:normal;margin-left:5px;margin-right:6px;text-align:center;padding:1px 4px 2px;background-color:#444;color:#f1f1f1;font-family:Verdana, Geneva, Camgirl Live Editor, sans-serif;}
+
+.footer{background-color:#222;padding:10px 0 5px;font-size:13px;color:#ccc;font-family:font-family:Century Gothic, Tahoma, Geneva, sans-serif;}
+.tab #mediasource,.tab #createnew,.tab #browse,.tab #position,.tab #markup{display:none;-webkit-animation:fadeInScale 1.2s ease-in-out;-moz-animation:fadeInScale 1.2s ease-in-out;-o-animation:fadeInScale 1.2s ease-in-out;-ms-animation:fadeInScale 1.2s ease-in-out;animation:fadeInScale 1.2s ease-in-out;z-index:500;font-size:20px;color:#888;font-family:Century Gothic, Arial, Helvetica, Camgirl Live Editor, sans-serif;}
+.tab #mediasource:target,.tab #createnew:target,.tab #browse:target,.tab #position:target,.tab #markup:target{display:block;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.90);z-index:1001;}
+textarea{display:block;max-width:97%;width:97%;max-height:300px;height:300px; outline:none;border:0;background-color:#222;color:#f1f1f1;font-size:15px;margin:10px auto 13px 3px;}
+code{font-size:17px;margin-left:6px;margin-right:6px;background-color:#95CAFF;padding:0 5px;text-align:center;}
+
+@-webkit-keyframes fadeInScale {0% {-webkit-transform:scale(0.6);}100% { -webkit-transform: scale(1);}}
+@-moz-keyframes fadeInScale {0% { -moz-transform: scale(0.6);}100% { -moz-transform: scale(1);}}
+@-o-keyframes fadeInScale {0% { -o-transform: scale(0.6);}100% { -o-transform: scale(1);}}
+@-ms-keyframes fadeInScale {0% { -ms-transform: scale(0.6);}100% { -ms-transform: scale(1);}}
+@keyframes fadeInScale {0% { transform: scale(0.6);}100% { transform: scale(1);}}
+@media only screen and (max-width: 728px){body{margin-top:10px;font-size:13px;color:#666;font-family:Verdana, Geneva, Camgirl Live Editor, sans-serif;}[class*="cl-"]{width:100%;}img{display:block;width:100%;height:auto;margin:0 auto;}}
+
+
+*{text-decoration:none;}
+* html .clearfix {height:1%;}
+</style>
+</head>
+
+<body>
+
+
+<div class="cl-12 wrapper">
+
+<div class="cl-12 tcenter"><h1>OBS overlay - Bar</h1></div>
+
+<div class="cl-6">
+<h2>About this overlay</h2>
+<p>This overlay is showing animated graphics on top of the video stream.</p>
+<p>The overlay source is a web page format which includes the markup code, graphic resources and editable text</p>
+<p>Install and use process is not complex and does not require external resources because all files are inside downloaded folder.</p>
+</div>
+
+<div class="cl-6 imgresp tcenter shadow"><a href="assets/obs_cover_top_tippers.jpg" target="_blank"><img src="assets/obs_cover_top_tippers.jpg" alt="cover overlay"/></a></div>
+
+
+<div class="cl-12">
+<h3>Install instructions</h3>
+<p><strong>How to use this overlay and how to edit it?</strong></p>
+<p>In order to edit the content of the <a href="../Bars.html" target="_blank">Bars.html</a> you must edit the source of the web page. Notepad++ (Windows users) or TextWrangler (MAC users) will do the job.</p>
+<p>To use this overlay on your stream follow the install steps suggested below</p>
+<p>
+<ol class="tab">
+<li>Open OBS</li>
+<li>From <strong>Sources</strong> zone click the <span class="square">+</span></li>
+<li id="ink">Next step is to select <strong>Browser</strong> from available options [<a href="#mediasource">screenshot</a>]
+<a href="#ink" class="imgresp"><img src="assets/obs-add-new-source.jpg" id="mediasource" /></a></li>
+<li><strong>Create New</strong> will show up, give it a name, easy to spot [<a href="#createnew">screenshot</a>]
+<a href="#ink" class="imgresp"><img src="assets/obs-select-source.jpg" id="createnew" /></a></li>
+<li><strong>Local File - Browse</strong>. Browse for the file <a href="../Bars.html" target="_blank">Bars.html</a>. Make sure you select Local File option [<a href="#browse">screenshot</a>]
+<a href="#ink" class="imgresp"><img src="assets/obs-local-file.jpg" id="browse" /></a><br/>Settings visible in screenshot</li>
+<li>Drag the red corners to fit your main screen source for better position [<a href="#position">screenshot</a>]
+<a href="#ink" class="imgresp"><img src="assets/obs-position-overlay.jpg" id="position" /></a>
+<li>Optional, you can play with Transition and Fade Transition options when triggering this overlay, it is up to you</li>
+</ol>
+</p>
+</div>
+
+<div class="cl-12">
+<h2>Editing the source code</h2>
+<p>As mentioned above, the  overlay can be edited using any HTML/CSS editor (WYSIWYG) like Notepad++ or TextWrangler.</p>
+<p>Open the html file in your favorite editor and alter the markup codes, swap images, edit text ...</p>
+<p>The HTML markup for icons looks like this:</p>
+<textarea spellcheck="false"><div class="cl-12 icons no">
+
+    <div id="toptipper" class="cl-4 no toptipper tright">
+       <p>Premium Username</p> <!--- add premium username --->
+    </div>
+    
+    
+    <div id="twitter" class="cl-4 twitter no">
+       <p>@TwitterUsername</p> <!--- add twitter username --->
+    </div>
+    
+    <div id="amazon" class="cl-4 amazon no">
+       <p>my-email@address.com</p> <!--- add your email address --->
+    </div>
+    
+    
+    
+</div></textarea>
+
+<p>The HTML markup for model's image:</p>
+<textarea spellcheck="false"><div id="modelphoto" class="effect">
+    <img src="images/model-image.jpg"/>
+</div></textarea>
+
+
+<p>The HTML markup for Model's name box, marquee animated text and current date:</p>
+<textarea spellcheck="false"><div class="cl-12 no bottombar">
+
+   <div class="cl-4 modelname no">
+       <p>Add Your Model Name here</p>
+   </div>
+   
+   <div class="cl-4 centered no">
+   <p>
+   <marquee>Welcome to my page. Don't forget to check out my Tip Menu and Follow me on Twitter ----- Let's Have Fun!</marquee> 
+   </p>
+   </div>
+   
+   <div class="cl-4 currentdate tfright no">
+     <p id="date"></p>
+   </div>
+   
+   
+</div></textarea>
+
+
+<p>Feel free to play with the markup code and add your own custom grpahics.</p>
+</div>
+
+<div class="cl-12">
+<h2>Resources</h2>
+<p>All graphic elements, custom font and markup code is running from your PC/laptop, no additional external resources necessary</p>
+<ul>
+<li><a href="../Bars.html" target="_blank">Bars.html</a></li>
+<li><a href="../images/" target="_blank">images folder</a></li>
+<li class="tab"><a href="#markup">full markup code</a>
+<div id="markup"><div class="cl-12">
+<textarea spellcheck="false"><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OBS Overlay - Bars</title>
+<style>
+/**
+      Name: OBS overlay Custom Bar - Extended version
+      Concept: Dan N & Dellany
+      Design : Dan N
+      Coded by: Dan N
+      URL: www.camgirl.cloud
+      |----------------------------------  
+      Need help installing this OBS overlay?
+      Or maybe you want a custom design for your live stream?
+      cssmfc@bitrix24.com
+**/
+body{width:100%;padding:0;margin:0 auto; font-family: 'MicroFLF';color:#fff;overflow:hidden;}
+
+@font-face {
+  font-family: 'MicroFLF';
+  src: url('font/MicroFLF.eot?#iefix') format('embedded-opentype'),  url('font/MicroFLF.woff') format('woff'), url('font/MicroFLF.ttf')  format('truetype'), url('font/MicroFLF.svg#MicroFLF') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cl-"] {float: left;padding: 15px;border: 0px solid red;}.cl-1 {width: 8.33%;}.cl-2 {width: 16.66%;}.cl-3 {width: 25%;}.cl-4 {width: 33.33%;}.cl-5 {width: 41.66%;}.cl-6 {width: 50%;}.cl-7 {width: 58.33%;}.cl-8 {width: 66.66%;}.cl-9 {width: 75%;}.cl-10 {width: 83.33%;}.cl-11 {width: 91.66%;}.cl-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgrespon img{display:block;width:100%;height:auto;}
+
+#main{}
+.bottombar{position:fixed;bottom:-6px;left:0;background-image: url(images/topbar01.png);background-repeat:no-repeat;background-size:cover;background-position:center;overflow:hidden;}
+.modelname p{display:block;width:90%;height:auto;margin:0 auto;line-height:normal;padding:9px 11px 9px;line-height:33px;margin-top:10px;text-indent:30px;}
+.centered p{display:block;width:100%;height:auto;margin:0 auto;line-height:normal;padding:9px 3px 9px;line-height:30px;}.centered marquee{margin-top:10px;}
+.currentdate p{display:block;width:90%;height:auto;margin:0 auto;line-height:normal;text-align:right;padding:9px 11px 9px;line-height:33px;margin-top:10px;}#date p{line-height:normal;text-align:right;padding:9px 11px 9px;line-height:33px;margin-top:10px;}
+#date{color:#F93;}
+#modelphoto{display:block;width:200px;height:200px;text-align:center;-webkit-border-radius:150px;border-radius:150px;padding:0;position:fixed;bottom:70px;left:10px;background-color:#000;overflow:hidden;border:5px solid #F66;}
+#modelphoto img{display:block;width:100%;height:auto;margin:0 auto;webkit-border-radius:150px;border-radius:150px;padding:0;-webkit-animation-delay: 3.5s;-moz-animation-delay: 3.5s;-webkit-animation: list 3s forwards;-moz-animation: list 3s forwards;}
+
+.effect{-webkit-animation-delay: 5s;-moz-animation-delay: 5s;-webkit-animation: float 7s 7s infinite;-moz-animation: float 7s 7s infinite;}
+
+.icons{position:fixed;bottom:0;left:0;background-color:#000;}
+
+#toptipper{-webkit-animation-delay: 5s;-moz-animation-delay: 5s;-webkit-animation: iconstwitter 5s 5s forwards;-moz-animation: iconstwitter 5s 5s forwards;}
+
+#twitter{-webkit-animation-delay: 8s;-moz-animation-delay: 8s;-webkit-animation: iconstwitter 6s 6s forwards;-moz-animation: iconstwitter 6s 6s forwards;}
+
+#amazon{-webkit-animation-delay: 9s;-moz-animation-delay: 9s;-webkit-animation: iconstwitter 7s 7s forwards;-moz-animation: iconstwitter 7s 7s forwards;}
+
+
+.toptipper p{display:block;width:90%;margin:0 auto;padding:5px 11px;font-size:19px;font-family:Tahoma, Geneva, sans-serif;}
+.twitter p{display:block;width:90%;margin:0 auto;padding:5px 11px;font-size:19px;font-family:Tahoma, Geneva, sans-serif;}
+.amazon p{display:block;width:90%;margin:0 auto;padding:5px 11px;font-size:19px;font-family:Tahoma, Geneva, sans-serif;}
+.toptipper{padding:8px 0 12px;text-align:right;color:#fff;border-radius:8px 8px 0 0;background-color:#F36;opacity:0;}
+.twitter{padding:8px 0 12px;text-align:center;color:#fff;border-radius:8px 8px 0 0;background-color:#09C;opacity:0;}
+.amazon{padding:8px 0 12px;text-align:center;color:#fff;border-radius:8px 8px 0 0;background-color:#F90;opacity:0;}
+.toptipper p{background-image:url(images/pcrown.png);background-repeat:no-repeat;background-size:30px 30px;background-position:170px 2px;}/*** You can change this image, replace the url path of the default one -  crown icon ***/
+.twitter p{background-image:url(images/twitter.png);background-repeat:no-repeat;background-size:30px 30px;background-position:70px 4px;}/*** You can change this image, replace the url path of the default one -  twitter icon ***/
+.amazon p{background-image:url(images/amazon.png);background-repeat:no-repeat;background-size:30px 30px;background-position:70px 4px;}/*** You can change this image, replace the url path of the default one -  amazon icon ***/
+
+
+.none{opacity:0;visibility:hidden;}
+/*** adding this class, will make all child elements not visible ***/
+
+@-webkit-keyframes float {
+  0% {-webkit-transform:rotateY(0deg) translate(0,0);}
+  50% {-webkit-transform:rotateY(-10deg) translate(0,20px);}
+  75% {-webkit-transform:rotateY(0deg) translate(0,-10px);}
+  100% {-webkit-transform:rotateY(360deg) translate(0,0);}}
+@keyframes float {
+  0% {transform:rotateY(0deg) translate(0,0);}
+  50% {transform:rotateY(-10deg) translate(0,20px);}
+  75% {transform:rotateY(0deg) translate(0,-10px);}
+  100% {transform:rotateY(360deg) translate(0,0);}}
+  
+@-webkit-keyframes list {
+  0% {-webkit-transform:rotateZ(0deg); opacity:0.5;}
+  100% {-webkit-transform:rotateZ(360deg);  opacity:1}}
+@keyframes list {
+  0% {transform:rotateZ(0deg); opacity:0.5;}
+  100% {transform:rotateZ(360deg);  opacity:1}}  
+  
+  
+@-webkit-keyframes iconstwitter {
+  0% {-webkit-transform: translate(0,70px); opacity:0;}
+  99% {-webkit-transform:translate(0,-50px);  opacity:1}
+  100% {-webkit-transform: translate(0,-45px); opacity:1;}}
+@keyframes iconstwitter {
+  0% {transform: translate(0,70px); opacity:0;}
+  99% {transform:translate(0,-50px);  opacity:1}
+  100% {transform:translate(0,-45px);  opacity:1}}  
+
+  
+  
+</style>
+</head>
+
+<body>
+
+
+<div id="main">
+
+
+<!-- This are the tabs showing behind the bottom bar
+You can edit the Premium Username, add your Twitter username and your email address for tippers to send you amazon giftcards or whatever... Because its on a screen, bots can not scarp your email address :)
+Edit only the plain text between paragraph tags <p> bla bla bla </p>
+--->
+
+
+
+<div class="cl-12 icons no">
+
+    <div id="toptipper" class="cl-4 no toptipper tright">
+       <p>Premium Username</p> <!--- add premium username --->
+    </div>
+    
+    
+    <div id="twitter" class="cl-4 twitter no">
+       <p>@TwitterUsername</p> <!--- add twitter username --->
+    </div>
+    
+    <div id="amazon" class="cl-4 amazon no">
+       <p>my-email@address.com</p> <!--- add your email address --->
+    </div>
+    
+    
+    
+</div>
+
+
+
+
+
+
+<!--- Edit the bottom bar --->
+
+<div class="cl-12 no bottombar">
+
+   <div class="cl-4 modelname no">
+       <p>Add Your Model Name here</p><!--- add your model name --->
+   </div>
+   
+   <div class="cl-4 centered no">
+   <p>
+   <marquee>Welcome to my page. Don't forget to check out my Tip Menu and Follow me on Twitter ----- Let's Have Fun!</marquee>  <!--- Change the text from marquee / it scrools from right to left. Do not add any other paragraph tags or any other marquee, just edit the plain text --->
+   </p>
+   </div>
+   
+   <div class="cl-4 currentdate tfright no">
+     <p id="date"></p><!--- Do not edit this... it shows current date. A nice thing to have when your shows are recorded by bots and uploaded on other websites :)  --->
+   </div>
+   
+   
+</div>
+
+
+
+<div id="modelphoto" class="effect">
+    <img src="images/model-image.jpg"/>
+</div>
+
+<!-- 
+Replace the above image with your own image, must be a square one 
+images/model-image.jpg  it can be 256x256, 300x300, 1000x1000
+Replace only the image path between double quotes!
+-->
+
+</div>
+
+<!--- This simple script is showing the current date -->
+<script>
+var d = new Date();
+document.getElementById("date").innerHTML = d.toDateString();
+</script>
+
+
+<!--- |
+      Name: OBS overlay Custom Bar - Extended version
+      Concept: Dan N & Dellany
+      Design : Dan N
+      Coded by: Dan N
+      URL: www.camgirl.cloud
+     |----------------------------------  
+      Need help installing this OBS overlay?
+      Or maybe you want a custom design for your live stream?
+      cssmfc@bitrix24.com
+| --->
+
+</body>
+</html>
+
+</textarea></div>
+<div class="cl-12 tcenter"><a href="#ink">x Close</a></div>
+</div></li>
+</ul>
+</div>
+
+<div class="cl-12 tcenter">
+<p>If you have suggestions, questions or feedback, feel free to post on <a href="https://camgirl.cloud/support/forum/download/obs-overlays/" target="_blank">support forum community</a><br/> More overlays will be provided for download on <a href="https://camgirl.cloud/" target="_blank">Camgirl Live Editor</a></p>
+</div>
+</div>
+
+<div class="cl-12 footer tcenter"><p>free download provided by Dan N from <a href="https://camgirl.cloud/" target="_blank">Camgirl Live Editor</a></div>
+
+</body>
+</html>
