@@ -55,7 +55,7 @@ To use this overlay on your stream follow the install steps suggested below
 4. **Create New** will show up, give it a name, easy to spot 
 ![Rename](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_topTippers/how%20to%20use/assets/obs-rename-browser-source.jpg)
 
-5. **Local File** - Browse. **Browse** for the file Countdown.html. Make sure you select **Local File** option 
+5. **Local File** - Browse. **Browse** for the file TopTippers.html. Make sure you select **Local File** option 
 ![Select Local File](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_topTippers/how%20to%20use/assets/obs-local-file.jpg)
  Settings visible in screenshot
  
