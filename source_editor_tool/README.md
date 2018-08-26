@@ -1,7 +1,7 @@
 # Source Editor 
 *Basic offline Source viewer and Editor*
 
-![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_bars/how%20to%20use/assets/cover_obs_overlay_bar.jpg)
+![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/source_editor_tool/cgc_cover_source_editor.jpg)
 
 
 ### Index
@@ -20,7 +20,7 @@
 This is a simple to use compiled web page allowing you to view, modify and render the edited source code of a web local web page.
 It uses Javascript, HTML and CSS all packed in a single web page.
 
-From time to time I offer markup codes, templates and resources for webcam performers as free downloads but some of them have dificulties in editing and customizing their template by altering the Source code.
+From time to time I offer markup codes, templates and resources for webcam performers as free downloads but some of them have difficulties in editing and customizing their template by altering the Source code.
 
 Well, this offline Source Editor is helping you view, edit and save markup codes.
 
@@ -43,7 +43,7 @@ Your browser must support HTML5 FileRender. If you see error message, please upg
 - Option to save the edited markup code 
 - Reset option (basically refresh page function) - will loose all edited markup
 - Supported files .html, .php,.txt
-- Supported markup codes and progamming language - all supported by your browser
+- Supported markup codes and programming language - all supported by your browser
 - Option to resize the Render window's width for testing responsiveness  
 
 **:ok_hand: Pro:**
@@ -54,8 +54,8 @@ Your browser must support HTML5 FileRender. If you see error message, please upg
 
 **:neutral_face: Con:**
 - does not auto correct the markup
-- this file must be placed in the same folder as the one which will be edited in order for the additional resources and full paths of your resources to render corectley (show images, additional/external stylesheet... so on)
-- it does not use the language detection for rendering diferent markup types with diferent visual styles
+- this file must be placed in the same folder as the one which will be edited in order for the additional resources and full paths of your resources to render correctly (show images, additional/external style-sheet... so on)
+- it does not use the language detection for rendering different markup types with different visual styles
 - it does not render php with server-side dependencies (you can only view its source)
 - it does not add document type headers (if missing)
 
@@ -82,7 +82,7 @@ Editing source code of a full markup code (a Chaturbate bio design for example, 
 :memo: **Please read**
 * I've developed this simple script in order to allow my collaborators to edit their Chaturbate bio design locally in their browser
 * I can not be responsible for how this file is used. If no editing skills, you might brake a functional web page or code snippet.
-* To test your code for smaller screen, there's a pice of javascript which makes the Render window narrow - button available 
+* To test your code for smaller screen, there's a piece of javascript which makes the Render window narrow - button available 
 
 ```javascript
 function my500() {
