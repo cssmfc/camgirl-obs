@@ -1,9 +1,7 @@
 # Source Editor 
 *Basic offline Source viewer and Editor*
 
-[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/cssmfc/obs/releases/tag/v1.0.Editor)
-
-
+[![Editor Source](https://img.shields.io/badge/source%20editor-0.1.Editor-brightgreen.svg)](https://github.com/cssmfc/obs/releases/tag/v1.0.Editor)
 
 
 ![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/source_editor_tool/cgc_cover_source_editor.jpg)
