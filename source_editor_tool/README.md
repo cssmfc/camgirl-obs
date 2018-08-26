@@ -1,6 +1,9 @@
 # Source Editor 
 *Basic offline Source viewer and Editor*
 
+[![GitHub tag](https://img.shields.io/github/tag/expressjs/express.svg)](https://github.com/cssmfc/obs/releases/tag/v1.0.Editor)
+
+
 ![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/source_editor_tool/cgc_cover_source_editor.jpg)
 
 
