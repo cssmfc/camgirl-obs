@@ -20,7 +20,7 @@
 This is a simple to use compiled web page allowing you to view, modify and render the edited source code of a local web page or code segment.
 It uses Javascript, HTML and CSS all packed in a single web page.
 
-> From time to time I offer markup codes, templates and resources for webcam performers as free downloads but some of them have > difficulties in editing and customizing their template by altering the Source code.
+> From time to time I offer markup codes, templates and resources for webcam performers as free downloads but some of them have  difficulties in editing and customizing their template by altering the Source code.
 
 Well, this offline Source Editor is helping you view, edit and save markup codes.
 
