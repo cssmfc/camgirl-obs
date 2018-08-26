@@ -1,8 +1,8 @@
 # Source Editor 
 *Basic offline Source viewer and Editor*
 
+[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/cssmfc/obs/releases/tag/v1.0.Editor)
 
-.. image:: https://img.shields.io/github/release/qubyte/rubidium.svg   :alt: GitHub release   :target: https://github.com/cssmfc/obs/releases/tag/v1.0.Editor
 
 
 
