@@ -1,7 +1,7 @@
 # OBS overlay - Stats
 *Custom overlay created for Battle of the Braves standalone section*
 
-![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_bars/how%20to%20use/assets/cover_obs_overlay_bar.jpg)
+![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_battle_stats/how%20to%20use/assets/stats_cover_obs_overlay.jpg)
 
 
 ### Index
@@ -14,7 +14,7 @@
 * [support and contact](README.md#contact)
 * [social network](README.md#links)
 
-## :inbox_tray: [Download Source and full documentation](https://github.com/cssmfc/obs/releases/tag/v1.0.Bar)
+## :inbox_tray: [Download Source and full documentation](https://github.com/cssmfc/obs/releases/tag/v1.0.Stats)
 
 ### About
 This OBS overlay shows animated content (using CSS3 keyframes).
@@ -24,7 +24,7 @@ Please note that after the overlay has been enabled, it has a 1.4s before starti
   * top banner image
   * animated flag in the left side
   * team header title using editable plain text (Metamorphous font)
-  * 6 Premium Usernames displaied in cascade transition with 8s delay animation starting with the first one
+  * 6 Premium Usernames displayed in cascade transition with 8s delay animation starting with the first one
     * each Premium Username has the team's icon in front
   * token value animated micro banner set as background image and editable token value using plain text
 * Blue Lords
@@ -32,7 +32,7 @@ Please note that after the overlay has been enabled, it has a 1.4s before starti
   * top banner image
   * animated flag in the left side
   * team header title using editable plain text (Metamorphous font)
-  * 6 Premium Usernames displaied in cascade transition with 8s delay animation starting with the first one
+  * 6 Premium Usernames displayed in cascade transition with 8s delay animation starting with the first one
     * each Premium Username has the team's icon in front
   * token value animated micro banner set as background image and editable token value using plain text
  
@@ -61,30 +61,27 @@ To use this overlay on your stream follow the install steps suggested below
 
 1. Open **OBS** [download OBS if necessary](https://obsproject.com/)
 2. From **Sources** zone click the :heavy_plus_sign: sign/icon
-
-![New Source](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_bars/how%20to%20use/assets/obs-add-new-source.jpg)
-
 3. Next step is to select **Browser** from available options 
-![Select Browser](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_bars/how%20to%20use/assets/obs-select-source.jpg)
+![New Source](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_battle_stats/how%20to%20use/assets/1obs_add_new.jpg)
 
 4. **Create New** will show up, give it a name, easy to spot 
-![Rename](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_bars/how%20to%20use/assets/obs-rename-browser-source.jpg)
+![Select Browser](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_battle_stats/how%20to%20use/assets/2obs_rename.jpg)
 
 5. **Local File** - Browse. **Browse** for the file Bars.html. Make sure you select **Local File** option 
-![Select Local File](https://github.com/cssmfc/obs/blob/master/obs_overlays/obs_overlay_bars/how%20to%20use/assets/obs-local-file.jpg)
+![Rename](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_battle_stats/how%20to%20use/assets/3obs_local_file.jpg)
  Settings visible in screenshot
  
-
 7. Drag the red corners to fit your main screen source for better position
-![Position](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_bars/how%20to%20use/assets/obs-position-overlay.jpg)
+![Select Local File](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_battle_stats/how%20to%20use/assets/4obs_reposition_resize.jpg)
 
 8. Optional, you can play with Transition and Fade Transition options when triggering this overlay, it is up to you.
+- Studio Mode must be enabled on OBS
 
 
 
 ### Content
 
-:open_file_folder: This github repository is holding markup codes and detailed documentation used for this OBS overlay along with graphics and install instructions
+:open_file_folder: This GitHub repository is holding markup codes, detailed documentation used for this OBS overlay along with graphics resources, install instructions and Source Editor tool
 
 
 ### Author Note
@@ -95,39 +92,63 @@ To use this overlay on your stream follow the install steps suggested below
 * all resources run locally from your device (desktop/laptop)
 * the overlay is triggered manually by the model
 * overlay developed for Chaturbate webcam performers.
-* javascript is used to display the current date
 
-```javascript
-<script>
-var d = new Date();
-document.getElementById("date").innerHTML = d.toDateString();
-</script>
-```
-
-The editable markup HTML code used for Premium Username, Twitter and Amazon sections
-
+Reference markup code for the Red Knights box
 ```html
-<div class="cl-12 icons no">
-
-    <div id="toptipper" class="cl-4 no toptipper tright">
-       <p>Premium Username</p> <!--- add premium username --->
-    </div>
-    
-    
-    <div id="twitter" class="cl-4 twitter no">
-       <p>@TwitterUsername</p> <!--- add twitter username --->
-    </div>
-    
-    <div id="amazon" class="cl-4 amazon no">
-       <p>my-email@address.com</p> <!--- add your email address --->
-    </div>
-    
-    
-    
+<!-- Red Knights Box -->
+<div class="cgc-6 wrapper-redteam">
+<div class="cgc-12 no imgresp tcenter fixupred">
+<img src="images/joinreds.png"/><!-- Red Knights Box - top image -->
+</div>
+<div class="cgc-12 breds bgtrans">
+ <div class="cgc-4 redteam tleft no imgresp">
+     <img src="images/team1.gif"/><!-- Red Knights Box - Animated Flag-->
+   </div>
+  <div class="cgc-8 teamred">
+      <h3 class="title">Red Knights</h3><!-- Red Knights Box - Title-->
+      <div class="cl-12 premiums">
+         <p>Premium Username</p><!-- Red Knights - listed premiums / Do not add more -->
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>600 tokens</p><!-- Red Knights - Edit token values  -->
+      </div>
+  </div>
+</div>
 </div>
 ```
-The layout of this overlay is using responsive values defined by `cl-` class
-HTML, CSS and Javascript are commented
+
+Reference markup code for the Blue Lords box
+
+```html
+<!-- Blue Lords Box -->
+<div class="cgc-6 wrapper-blueteam">
+<div class="cgc-12 no imgresp tcenter fixupblue">
+<img src="images/joinlords.png"/><!-- Blue Lords Box top image-->
+</div>
+<div class="cgc-12 bblues bgtrans">
+  <div class="cgc-8 teamblue">
+      <h3 class="title">Blue Lords</h3><!-- Blue Lords Section Title-->
+      <div class="cl-12 premiums">
+         <p>Premium Username</p><!-- Blue Lords - listed premiums  / Do not add more -->
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>600 tokens</p><!-- Blue Lords - Edit token values -->
+      </div>
+  </div>
+  <div class="cgc-4 blueteam tleft no imgresp">
+     <img src="images/team2.gif"/><!-- Blue Lords - Animated Flag -->
+   </div>
+</div>
+</div>
+```
+The layout of this overlay is using responsive values defined by `cgc-` class
+HTML and CSS are commented
 
 
 **Install instructions and full documentation along with all necessary resources provided inside the downloaded file**
