@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OBS Overlay Battle - Stats</title>
+<style>
+/**
+      Name: OBS overlay Stats - v1.0.0
+      Concept: Dan N & Dellany
+      Design : Dan N
+      Coded by: Dan N
+      URL: www.camgirl.cloud
+      |----------------------------------  
+      Need help installing this OBS overlay?
+      Or maybe you want a custom design for your live stream?
+      cssmfc@bitrix24.com
+**/
+* {-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+/*** makes text elements clear ***/
+body{width:100%;margin:0 auto;overflow:hidden;}
+
+.scr::-webkit-scrollbar{width: 8px;}.scr::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.scr::-webkit-scrollbar-thumb{-webkit-border-radius:10px; border-radius:10px;background: #333;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.scr::-webkit-scrollbar-thumb:window-inactive{background: rgba(204,0,0,.4);border:1px solid #900;}
+/*** makes text elements clear ***/
+
+* {box-sizing: border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cgc-"] {float: left;padding: 15px;border: 1px solid rgba(0,0,0,0.0);}.cgc-1 {width: 8.33%;}.cgc-2 {width: 16.66%;}.cgc-3 {width: 25%;}.cgc-4 {width: 33.33%;}.cgc-5 {width: 41.66%;}.cgc-6 {width: 50%;}.cgc-7 {width: 58.33%;}.cgc-8 {width: 66.66%;}.cgc-9 {width: 75%;}.cgc-10 {width: 83.33%;}.cgc-11 {width: 91.66%;}.cgc-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}
+/*** reset and responsive elements ***/
+
+/** Fonts **/
+@font-face {
+  font-family: 'Metamorphous';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Metamorphous'), url('fonts/metamorphus.woff2') format('woff2'),url('fonts/Metamorphous-Regular.ttf')  format('truetype');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Metamorphous';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Metamorphous'), url('fonts/metamorphuss.woff2') format('woff2'),url('fonts/Metamorphous-Regular.ttf')  format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'MicroFLF';
+  src: url('fonts/MicroFLF.eot?#iefix') format('embedded-opentype'),  url('fonts/MicroFLF.woff') format('woff'), url('fonts/MicroFLF.ttf')  format('truetype'), url('fonts/MicroFLF.svg#MicroFLF') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*** Wrapper - main content ***/
+
+.wrapper-redteam{-webkit-transform: translate(-100%, 5%) rotateY(180deg); transform: translate(-100%, 5%) rotateY(180deg); -webkit-animation: showred 2s 2s ease-in-out forwards;animation: showred 2s 2s ease-in-out forwards;-webkit-animation-delay: 1.4s;animation-delay: 1.4s;opacity:0;}
+/*** Main box Red Knights ***/
+
+.wrapper-blueteam{-webkit-transform: translate(150%, 5%) rotateY(180deg); transform: translate(150%, 5%) rotateY(180deg); -webkit-animation: showblue 3.2s 3.2s ease-in-out forwards;animation: showblue 3.2s 3.2s ease-in-out forwards;-webkit-animation-delay: 3.4s;animation-delay: 3.4s;opacity:0;}
+/*** Main box Blue Lords ***/
+
+
+.bgtrans{background-color:rgba(0,0,0,0.70);-webkit-border-radius:0 0 10px 10px;border-radius:0 0 10px 10px;}
+
+
+.redteam img,.blueteam img{display:block;width:100%;height:auto;margin:0 auto;}
+.teamred h3.title{display:block;width:100%;height:auto;color:#fff;font-size:35px;text-align:center;font-family: 'Metamorphous', cursive;}
+.teamblue h3.title{display:block;width:100%;height:auto;color:#fff;font-size:35px;text-align:center;font-family: 'Metamorphous', cursive;}
+.teamred .premiums{color:#fff;font-size:20px;font-family: 'MicroFLF', Century Gothic, Verdana;text-shadow:0 0 10px #000;}
+.teamred .premiums p{display:block;width:90%;height:auto;padding:11px 12px;line-height:normal;border-bottom:1px solid #666;text-indent:43px;margin:0 auto;background-image:url(images/t1.png);background-repeat:no-repeat;background-size:40px 40px;background-position:1px 2px;}
+.teamblue .premiums{color:#fff;font-size:20px;font-family: 'MicroFLF', Century Gothic, Verdana;text-shadow:0 0 10px #000;}
+.teamblue .premiums p{display:block;width:90%;height:auto;padding:11px 12px;line-height:normal;border-bottom:1px solid #666;text-indent:43px;margin:0 auto;background-image:url(images/t2.png);background-repeat:no-repeat;background-size:40px 40px;background-position:1px 2px;}
+.fixupred{position:relative;margin:0 auto -40px auto;-webkit-border-radius:10px;border-radius:10px;background-image:url(images/bg_reds.png);background-repeat:repeat-x;background-size:auto;background-position:0 0;}
+.fixupblue{position:relative;margin:0 auto -40px auto;-webkit-border-radius:10px;border-radius:10px;background-image:url(images/bg_blues.png);background-repeat:repeat-x;background-size:auto;background-position:0 0;}
+.fixupred img,.fixupblue img{margin:-20px auto 10px auto;}
+
+
+.premiums p{
+	-webkit-transform: translate(0%, -35%) rotateY(10deg);
+	transform: translate(0%, -35%) rotateY(10deg);
+	-webkit-animation: view .5s .5s ease-in-out forwards;
+	animation: view .5s .5s ease-in-out forwards;
+	opacity:0;
+	overflow:hidden;
+	background-color:#fff;
+	}
+	
+
+.premiums p:nth-child(1){-webkit-animation-delay: 8s;animation-delay: 8s;}
+.premiums p:nth-child(2){-webkit-animation-delay: 9s;animation-delay: 9s;}
+.premiums p:nth-child(3){-webkit-animation-delay: 10s;animation-delay: 10s;}
+.premiums p:nth-child(4){-webkit-animation-delay: 11s;animation-delay: 11s;}
+.premiums p:nth-child(5){-webkit-animation-delay: 12s;animation-delay: 12s;}
+.premiums p:nth-child(6){-webkit-animation-delay: 13s;animation-delay: 13s;}
+.premiums p:nth-child(7){-webkit-animation-delay: 15s;animation-delay: 15s;}
+/*** general delay for all 7 paragraphs from both boxes ***/
+
+.teamblue .premiums p:nth-child(7),
+.teamred .premiums p:nth-child(7){background-color:transparent;text-indent:0px;text-align:center;color:#fff;font-size:20px;line-height:30px;margin:10px auto;display:block;width:90%;height:auto;padding:19px 12px;line-height:normal;border-bottom:0px solid #ccc;text-align:center;text-shadow:0 1px 2px #000;text-transform:uppercase;font-family:Tahoma, Geneva, sans-serif;}
+/** redesigned paragraph 7 for the tokens value **/
+	
+
+.teamblue .premiums p:nth-child(7){background-image: url(images/tokens_blues.gif);background-repeat:no-repeat;background-size:cover;background-position:center;}
+.teamred .premiums p:nth-child(7){background-image: url(images/tokens_reds.gif);background-repeat:no-repeat;background-size:cover;background-position:center;}
+/** redesigned paragraph 7 for the tokens value **/
+
+.bblues{background-image:url(images/bgcov_blue.png);background-repeat:no-repeat;background-size:100%;background-position:bottom center;}
+.breds{background-image: url(images/bgcove_red.png);background-repeat:no-repeat;background-size:100%;background-position:bottom center;}
+/** secondary backgrounds for boxes **/
+
+
+/** Animations **/
+@-webkit-keyframes showred {
+    0% {-webkit-transform: translate(-150%, 5%) rotateY(180deg); opacity:0.5;}
+	100% {-webkit-transform: translate(0%, 5%) rotateY(0deg);  opacity:1;}}
+
+
+@keyframes showred {
+    0% {transform: translate(-150%, 5%) rotateY(180deg); opacity:0.5;}
+	100% {transform: translate(0%, 5%) rotateY(0deg);  opacity:1;}}
+	
+@-webkit-keyframes showblue {
+    0% {-webkit-transform: translate(-150%, 5%) rotateY(180deg); opacity:0;}
+	100% {-webkit-transform: translate(0%, 5%) rotateY(0deg);  opacity:1;}}
+
+
+@keyframes showblue {
+    0% {transform: translate(-150%, 5%) rotateY(180deg); opacity:0;}
+	100% {transform: translate(0%, 5%) rotateY(0deg);  opacity:1;}}	
+	
+@-webkit-keyframes view {
+    0% {-webkit-transform: translate(-20%, 5%) rotateY(90deg); opacity:0;}
+	100% {-webkit-transform: translate(0%, 5%) rotateY(0deg);  opacity:1;background-color: transparent;}}
+
+
+@keyframes view {
+    0% {transform: translate(-20%, 5%) rotateY(90deg); opacity:0;}
+	100% {transform: translate(0%, 5%) rotateY(0deg);  opacity:1;background-color: transparent;}}
+</style>
+</head>
+
+<body>
+
+
+
+
+<div id="main" class="cgc-12 no">
+
+
+<!-- Red Knights Box -->
+<div class="cgc-6 wrapper-redteam">
+<div class="cgc-12 no imgresp tcenter fixupred">
+<img src="images/joinreds.png"/><!-- Red Knights Box - top image -->
+</div>
+<div class="cgc-12 breds bgtrans">
+ <div class="cgc-4 redteam tleft no imgresp">
+     <img src="images/team1.gif"/><!-- Red Knights Box - Animated Flag-->
+   </div>
+  <div class="cgc-8 teamred">
+      <h3 class="title">Red Knights</h3><!-- Red Knights Box - Title-->
+      <div class="cl-12 premiums">
+         <p>Premium Username</p><!-- Red Knights - listed premiums / Do not add more -->
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>600 tokens</p><!-- Red Knights - Edit token values  -->
+      </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Blue Lords Box -->
+<div class="cgc-6 wrapper-blueteam">
+<div class="cgc-12 no imgresp tcenter fixupblue">
+<img src="images/joinlords.png"/><!-- Blue Lords Box top image-->
+</div>
+<div class="cgc-12 bblues bgtrans">
+  <div class="cgc-8 teamblue">
+      <h3 class="title">Blue Lords</h3><!-- Blue Lords Section Title-->
+      <div class="cl-12 premiums">
+         <p>Premium Username</p><!-- Blue Lords - listed premiums  / Do not add more -->
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>Premium Username</p>
+         <p>600 tokens</p><!-- Blue Lords - Edit token values -->
+      </div>
+  </div>
+  <div class="cgc-4 blueteam tleft no imgresp">
+     <img src="images/team2.gif"/><!-- Blue Lords - Animated Flag -->
+   </div>
+</div>
+</div>
+
+
+<!--
+      Name: OBS overlay Stats - v1.0.0
+      Concept: Dan N & Dellany
+      Design : Dan N
+      Coded by: Dan N
+      URL: www.camgirl.cloud
+      |----------------------------------  
+      Need help installing this OBS overlay?
+      Or maybe you want a custom design for your live stream?
+      cssmfc@bitrix24.com
+-->
+
+</div>
+
+
+
+</body>
+</html>
