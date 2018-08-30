@@ -1,0 +1,720 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Install Instructions</title>
+<style>
+body{width:80%;margin:0 auto;background-color:#f1f1f1;}
+.wrapper{background-color:#fff;color:#777;margin:20px auto 10px auto;box-shadow:0 0 8px #999;font-family:Century Gothic, Tahoma, Geneva, sans-serif;}
+
+a:link,a:visited{color:#09C;}a:hover {color:#F39;}
+.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#fb89ff;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #ccc;}* {box-sizing: border-box;}html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cl-"] {float: left;padding: 15px;border: 0px solid red;}.cl-1 {width: 8.33%;}.cl-2 {width: 16.66%;}.cl-3 {width: 25%;}.cl-4 {width: 33.33%;}.cl-5 {width: 41.66%;}.cl-6 {width: 50%;}.cl-7 {width: 58.33%;}.cl-8 {width: 66.66%;}.cl-9 {width: 75%;}.cl-10 {width: 83.33%;}.cl-11 {width: 91.66%;}.cl-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.shadow img{-webkit-transition:all 0.3s;transition:all 0.3s;}.shadow img:hover{-webkit-transform:scale(1.1,1.1);transform:scale(1.1,1.1);-webkit-box-shadow:0 12px 16px -6px #000;box-shadow:0 12px 16px -6px #000;} .square{line-height:normal;margin-left:5px;margin-right:6px;text-align:center;padding:1px 4px 2px;background-color:#444;color:#f1f1f1;font-family:Verdana, Geneva, Camgirl Live Editor, sans-serif;}
+
+.footer{background-color:#222;padding:10px 0 5px;font-size:13px;color:#ccc;font-family:Century Gothic, Tahoma, Geneva, sans-serif;}
+.tab #mediasource,.tab #createnew,.tab #browse,.tab #position,.tab #markup{display:none;-webkit-animation:fadeInScale 1.2s ease-in-out;-moz-animation:fadeInScale 1.2s ease-in-out;-o-animation:fadeInScale 1.2s ease-in-out;-ms-animation:fadeInScale 1.2s ease-in-out;animation:fadeInScale 1.2s ease-in-out;z-index:500;font-size:20px;color:#888;font-family:Century Gothic, Arial, Helvetica, Camgirl Live Editor, sans-serif;}
+.tab #mediasource:target,.tab #createnew:target,.tab #browse:target,.tab #position:target,.tab #markup:target{display:block;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.90);z-index:1001;}
+textarea{display:block;max-width:97%;width:97%;max-height:300px;height:300px; outline:none;border:0;background-color:#222;color:#f1f1f1;font-size:15px;margin:10px auto 13px 3px;}
+code{font-size:17px;margin-left:6px;margin-right:6px;background-color:#95CAFF;padding:0 5px;text-align:center;}
+.informatie{display:block;width:90%;height:auto;padding:8px 12px;margin:5px auto 8px 3px;background-color:rgba(153,204,255,0.10);color:#09C;border:3px double #09C;font-size:14px;font-family:Tahoma, Geneva, sans-serif;-webkit-border-radius:4px;border-radius:4px;text-align:center;line-height:30px;}
+.informatie a,.informatie a:visited{color:#F90;text-decoration:underline;}
+.informatie a:hover{color:#333;text-decoration:underline;}
+@-webkit-keyframes fadeInScale {0% {-webkit-transform:scale(0.6);}100% { -webkit-transform: scale(1);}}
+@-moz-keyframes fadeInScale {0% { -moz-transform: scale(0.6);}100% { -moz-transform: scale(1);}}
+@-o-keyframes fadeInScale {0% { -o-transform: scale(0.6);}100% { -o-transform: scale(1);}}
+@-ms-keyframes fadeInScale {0% { -ms-transform: scale(0.6);}100% { -ms-transform: scale(1);}}
+@keyframes fadeInScale {0% { transform: scale(0.6);}100% { transform: scale(1);}}
+@media only screen and (max-width: 728px){body{margin-top:10px;font-size:13px;color:#666;font-family:Verdana, Geneva, Camgirl Live Editor, sans-serif;}[class*="cl-"]{width:100%;}img{display:block;width:100%;height:auto;margin:0 auto;}}
+
+
+*{text-decoration:none;}
+* html .clearfix {height:1%;}
+</style>
+</head>
+
+<body>
+
+
+<div class="cl-12 wrapper">
+
+<div class="cl-12 tcenter"><h1>OBS overlay - My Tip Menu</h1></div>
+
+<div class="cl-6">
+<h2>About this overlay</h2>
+<p>This overlay is showing animated graphics on top of the video stream.</p>
+<p>The overlay source is a web page format which includes the markup code, graphic resources and editable text</p>
+<p>Install and use process is not complex and does not require external resources because all files are inside downloaded folder.</p>
+</div>
+
+<div class="cl-6 imgresp tcenter shadow"><a href="assets/stats_cover_obs_overlay.jpg" target="_blank"><img src="assets/stats_cover_obs_overlay.jpg" alt="cover overlay"/></a></div>
+
+
+<div class="cl-12">
+<h3>Install instructions and Editing suggestions</h3>
+<p class="informatie">Skip some of the steps or suggestions if don't apply when you are using the <a href="../Source_Editor.html" target="_blank">Source Editor</a></p>
+<p><strong>How to use this overlay and how to edit it?</strong></p>
+<p>In order to edit the content of the <a href="../MyTipMenu.html" target="_blank">MyTipMenu.html</a> you must edit the source of the web page. Notepad++ (Windows users) or TextWrangler (MAC users) will do the job.</p>
+<p>To use this overlay on your stream follow the install steps suggested below</p>
+<p>
+<ol class="tab">
+<li>Open OBS</li>
+<li>From <strong>Sources</strong> zone click the <span class="square">+</span></li>
+<li id="ink">Next step is to select <strong>Browser</strong> from available options [<a href="#mediasource">screenshot</a>]
+<a href="#ink" class="imgresp"><img src="assets/1obs_add_new.jpg" id="mediasource" /></a></li>
+<li><strong>Create New</strong> will show up, give it a name, easy to spot [<a href="#createnew">screenshot</a>]
+<a href="#ink" class="imgresp"><img src="assets/2obs_rename.jpg" id="createnew" /></a></li>
+<li><strong>Local File - Browse</strong>. Browse for the file <a href="../MyTipMenu.html" target="_blank">MyTipMenu.html</a>. Make sure you select Local File option [<a href="#browse">screenshot</a>]
+<a href="#ink" class="imgresp"><img src="assets/3obs_local_file.jpg" id="browse" /></a><br/>Settings visible in screenshot</li>
+<li>Drag the red corners to fit your main screen source for better position [<a href="#position">screenshot</a>]
+<a href="#ink" class="imgresp"><img src="assets/4obs_reposition_resize.jpg" id="position" /></a>
+<li>Optional, you can play with Transition and Fade Transition options (OBS Studio Mode must be active) when triggering this overlay, it is up to you</li>
+</ol>
+</p>
+</div>
+
+<div class="cl-12">
+<h2>Editing the source code</h2>
+<p>As mentioned above, the  overlay can be edited using any HTML/CSS editor (WYSIWYG) like Notepad++, TextWrangler or provided <a href="../Source_Editor.html" target="_blank">Source Editor</a> (no install necessary)</p>
+<p>Open the html file in your favorite editor and alter the markup codes, swap images, edit text ...</p>
+<p>Full page markup code:</p>
+<textarea spellcheck="false"><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OBS overlay - Tip Menu</title>
+<style>
+/**
+      Name: OBS overlay My Tip Menu - v1.0.T
+      Concept: Dan N & Dellany
+      Design : Dan N
+      Coded by: Dan N
+      URL: www.camgirl.cloud
+      |----------------------------------  
+      Need help installing this OBS overlay?
+      Or maybe you want a custom design for your live stream?
+      cssmfc@bitrix24.com
+**/
+* {-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+/*** makes text elements clear ***/
+body{width:100%;margin:0 auto;overflow:hidden;}
+
+.scr::-webkit-scrollbar{width: 8px;}.scr::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.scr::-webkit-scrollbar-thumb{-webkit-border-radius:10px; border-radius:10px;background: #333;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.scr::-webkit-scrollbar-thumb:window-inactive{background: rgba(204,0,0,.4);border:1px solid #900;}
+
+
+* {box-sizing: border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cgc-"] {float: left;padding: 15px;border: 1px solid rgba(0,0,0,0.0);}.cgc-1 {width: 8.33%;}.cgc-2 {width: 16.66%;}.cgc-3 {width: 25%;}.cgc-4 {width: 33.33%;}.cgc-5 {width: 41.66%;}.cgc-6 {width: 50%;}.cgc-7 {width: 58.33%;}.cgc-8 {width: 66.66%;}.cgc-9 {width: 75%;}.cgc-10 {width: 83.33%;}.cgc-11 {width: 91.66%;}.cgc-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}
+/*** reset and responsive elements ***/
+
+/** Fonts **/
+
+@font-face {
+  font-family: 'MicroFLF';
+  src: url('font/MicroFLF.eot?#iefix') format('embedded-opentype'),  url('font/MicroFLF.woff') format('woff'), url('font/MicroFLF.ttf')  format('truetype'), url('font/MicroFLF.svg#MicroFLF') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*** Wrapper - main content ***/
+#main{margin:40px auto;}
+
+
+
+#tipmenu{background-color:rgba(0,0,0,0.0);-webkit-transform: translate(-100%, 0%) rotateY(30deg); transform: translate(-100%, 0%) rotateY(30deg); -webkit-animation: aratatipmenu 2s 2s ease-in-out forwards;animation: aratatipmenu 2s 2s ease-in-out forwards;-webkit-animation-delay: 1.4s;animation-delay: 1.4s;opacity:0;background-image:url(images/main_bg.png);background-repeat:no-repeat;background-size:cover;background-position:right; }
+/*** The wrapping element for Tip Menu box - you can change the main_bg.png background image here ***/
+
+.listamenu{background-color:rgba(0,0,0,0.0);height:500px;margin-top:20px;z-index:99;}
+/*** The wrapping element for List Menu ***/
+
+.title{color:#fff;background-image:url(images/header_bg.jpg);background-repeat:repeat-x;background-size:auto;background-position:0 0;line-height: normal;-moz-transform: scale(1) skew(-21deg, 0deg);-webkit-transform: scale(1) skew(-21deg, 0deg);transform: scale(1) skew(-21deg, 0deg);-webkit-border-radius:2px 15px 45px 70px;}
+.title p{line-height:10px;font-size:23px;padding:4px 0 5px;margin:13px auto 30px auto;text-transform:uppercase; font-family: 'MicroFLF', Tahoma, Geneva, sans-serif;-moz-transform: scale(1) skew(21deg, 0deg);-webkit-transform: scale(1) skew(21deg, 0deg);transform: scale(1) skew(21deg, 0deg);text-shadow:0 1px 5px #000;}
+/*** The wrapping element title - using plain text to edit the HTML markup source below. This is only the visual style ***/
+
+
+
+
+.tiprequests{height:1px;overflow:hidden;-webkit-animation: aratatips 2s 2s ease-in-out forwards;animation: aratatips 2s 2s ease-in-out forwards;-webkit-animation-delay: 2.6s;animation-delay: 2.6s;opacity:0;background-color:rgba(0,0,0,0.80);margin:-14px 5px 12px auto!important;top:-25px;}
+.w90{width:98%!important;margin:-13px 5px 12px auto!important;float:none;clear:left;position:relative;padding:0;-webkit-border-radius:0 0 16px 16px;border-radius:0 0 16px 16px;}
+[id|=tiprequest]{background-image: url(images/bg01.png);background-repeat: no-repeat;background-position:center;background-size:cover;-webkit-animation: movebg 1s 1s ease-in-out forwards;animation: movebg 1s 1s ease-in-out forwards;-webkit-animation-delay: 3s;animation-delay: 3s;opacity:0;}
+/*** This will change the background image bg01.png / the techy blue image behind each listed element ***/
+
+
+
+.showtiprequest div{
+	-webkit-transform: translate(0%, -35%) rotateY(10deg);
+	transform: translate(0%, -35%) rotateY(10deg);
+	-webkit-animation: view 3.5s 3.5s ease-in-out forwards;
+	animation: view 3.5s 3.5s ease-in-out forwards;
+	opacity:0;
+	padding:5px 8px 4px;
+	line-height:normal;
+	overflow:hidden;
+	background-color:#fff;
+	font-family: 'MicroFLF', Tahoma, Geneva, sans-serif;
+	color:#fff;}
+	
+#tiprequest-1 .showtiprequest div:nth-child(1){-webkit-animation-delay: 3s;animation-delay: 3s;}
+#tiprequest-2 .showtiprequest div:nth-child(2){-webkit-animation-delay: 4s;animation-delay: 4s;}
+#tiprequest-3 .showtiprequest div:nth-child(3){-webkit-animation-delay: 5s;animation-delay: 5s;}
+#tiprequest-4 .showtiprequest div:nth-child(4){-webkit-animation-delay: 6s;animation-delay: 6s;}
+#tiprequest-5 .showtiprequest div:nth-child(5){-webkit-animation-delay: 7s;animation-delay: 7s;}
+#tiprequest-6 .showtiprequest div:nth-child(6){-webkit-animation-delay: 8s;animation-delay: 8s;}
+#tiprequest-7 .showtiprequest div:nth-child(7){-webkit-animation-delay: 9s;animation-delay: 9s;}
+
+/*** Animation delay to show each listed element with animated delay. Do Not Add more of this ***/
+
+.tval div{
+	-webkit-animation: view 5s 5s ease-in-out forwards;
+	animation: view 5s 5s ease-in-out forwards;
+	opacity:0;
+	padding:6px 8px 5px;
+	line-height:normal;
+	overflow:hidden;
+	background-color:#fff;
+	font-family: 'MicroFLF', Tahoma, Geneva, sans-serif;
+	color:#fff;
+	font-size:15px;
+	background-image:url(images/tokens_bg.jpg);background-repeat:repeat-x;background-position:center;background-size:auto;-webkit-transform: rotateX(-180deg) skew(190deg, 0deg);transform:  rotateX(-180deg) skew(190deg, 0deg);-webkit-clip-path: polygon(11% 0, 100% 0, 91% 100%, 0 100%);clip-path: polygon(11% 0, 100% 0, 91% 100%, 0 100%);-webkit-border-radius:0 10px 0 10px;border-radius:0 10px 0 10px;}
+	
+#tiprequest-1 .tval div:nth-child(1){-webkit-animation-delay: 4s;animation-delay: 4s;}
+#tiprequest-2 .tval div:nth-child(2){-webkit-animation-delay: 5s;animation-delay: 5s;}
+#tiprequest-3 .tval div:nth-child(3){-webkit-animation-delay: 6s;animation-delay: 6s;}
+#tiprequest-4 .tval div:nth-child(4){-webkit-animation-delay: 7s;animation-delay: 7s;}
+#tiprequest-5 .tval div:nth-child(5){-webkit-animation-delay: 8s;animation-delay: 8s;}
+#tiprequest-6 .tval div:nth-child(6){-webkit-animation-delay: 9s;animation-delay: 9s;}
+#tiprequest-7 .tval div:nth-child(7){-webkit-animation-delay: 10s;animation-delay: 10s;}
+
+/*** Animation delay to show for value of the token amount / each listed element visible with animated delay. Do Not Add more of this ***/
+
+[id|=tiprequest]{-webkit-clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%, 0 38%);
+clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%, 0 38%);}
+
+.btnhovers{background-image: url(images/bghvr.png);background-repeat:no-repeat;background-position:-300% 0%;background-size:100px 200px;-webkit-animation-delay: 3s;animation-delay: 3s;-webkit-animation: hvr  3s 3s ease-in-out forwards;animation: hvr  3s 3s ease-in-out forwards;}
+/*** This is the background image animated with CSS3, a shine overlay on top of the blue background image ***/
+
+.pozamodel{-webkit-transform: rotate(0);transform: rotate(0);z-index:10000;}
+.pozamodel img{-webkit-border-radius:100%;border-radius:100%;margin:-40px 0 0 5px;-webkit-transform:scale(1.2,1.2) rotate(0);transform:scale(1.2,1.2) rotate(0);border:5px solid rgba(0,0,0,0.50);z-index:99999;border-top:5px solid #900;border-right:5px solid #900;border-bottom:5px solid #900;border-left:5px solid #09C;-webkit-animation: border 3s 3s ease-in-out infinite;animation: border 3s 3s ease-in-out infinite;}
+/*** This is used for animating the model's border image red, dark red, blue ***/
+
+
+.mtitle p{color:#fff;font-family: 'MicroFLF', Tahoma, Geneva, sans-serif;background-color:rgba(0,0,0,0.50);padding:10px 0 11px;-webkit-clip-path: polygon(4% 0, 97% 0, 100% 50%, 96% 100%, 4% 100%, 0 49%);
+clip-path: polygon(4% 0, 97% 0, 100% 50%, 96% 100%, 4% 100%, 0 49%);border-top:5px solid #900;border-bottom:5px solid #09C;}
+/*** This is the style used for Model's Name box ***/
+
+/** Animations **/
+@-webkit-keyframes aratatipmenu {
+    0% {-webkit-transform: translate(-100%, 0%) rotateY(30deg); opacity:0.5;}
+	100% {-webkit-transform: translate(0%, 0%) rotateY(0deg);  opacity:1;}
+	}
+
+
+@keyframes aratatipmenu {
+    0% {transform: translate(-100%, 0%) rotateY(30deg); opacity:0.5;}
+	100% {transform: translate(0%, 0%) rotateY(0deg);  opacity:1;}
+	}
+
+@-webkit-keyframes aratatips {
+    0% {height:1px;overflow:hidden; opacity:0.5;}
+	100% {height:440px;overflow:hidden; opacity:1;}
+	}
+
+
+@keyframes aratatips {
+    0% {height:1px;overflow:hidden; opacity:0.5;}
+	100% {height:440px;overflow:hidden; opacity:1;}
+	}
+
+@-webkit-keyframes view {
+    0% {-webkit-transform: translate(-20%, 5%) rotateY(90deg); opacity:0;}
+	100% {-webkit-transform: translate(0%, 5%) rotateY(0deg);  opacity:1;background-color: transparent;}
+	}
+
+
+@keyframes view {
+    0% {transform: translate(-20%, 5%) rotateY(90deg); opacity:0;}
+	100% {transform: translate(0%, 5%) rotateY(0deg);  opacity:1;background-color: transparent;}
+	}
+	
+	
+@-webkit-keyframes movebg{
+    0% {background-size:1px 1px;background-position:0 -100%;opacity:0;}
+	100% {background-size:cover;background-position:0 50%;opacity:1;}
+	}
+
+
+@keyframes movebg {
+    0% {background-size:1px 1px;background-position:0 -100%;opacity:0;}
+	100% {background-size:cover;background-position:0 50%;opacity:1;}
+	}
+	
+@-webkit-keyframes hvr{
+    0% {background-position:-400% 0%;}
+	100% {background-position:130% 0%;}
+	}
+
+
+@keyframes hvr {
+    0% {background-position:-400% 0%;}
+	100% {background-position:130% 0%;}
+	}
+@-webkit-keyframes border {
+    0% {-webkit-transform: translate(-100%, 0%) rotateY(30deg); opacity:0.5;}
+	100% {-webkit-transform: translate(0%, 0%) rotateY(0deg);  opacity:1;}
+	}
+
+
+@keyframes border {
+    0% {
+		border-top:5px solid #f00;
+	    border-right:5px solid #900;
+		border-bottom:5px solid #f00;
+		border-left:5px solid #09C;
+		}
+	25% {
+		border-top:5px solid #09C;
+		border-right:5px solid #f00;
+		border-bottom:5px solid #900;
+		border-left:5px solid #f00;
+		}
+	50% {
+		border-top:5px solid #f00;
+		border-right:5px solid #09C;
+		border-bottom:5px solid #f00;
+		border-left:5px solid #900;
+		}
+	75% {
+		border-top:5px solid #900;
+		border-right:5px solid #f00;
+		border-bottom:5px solid #09C;
+		border-left:5px solid #f00;
+		}
+	100% {
+		border-top:5px solid #f00;
+		border-right:5px solid #900;
+		border-bottom:5px solid #f00;
+		border-left:5px solid #09C;
+		}
+	}
+</style>
+</head>
+
+<body>
+
+<div id="main" class="cgc-12">
+
+
+
+
+  <div id="tipmenu" class="cgc-8">
+      <div class="cgc-12 tipmenu no">
+      
+         <div class="cgc-3 no imgresp tcenter pozamodel">
+          <img src="images/pic05.jpg"/>
+          <!-- Change Model's image here, between double quotes, make sure its a square image -->
+          <div class="cgc-12 tcenter mtitle">
+             <p>Model Name</p>
+             <!-- Change Model Name here, between paragraph tags -->
+          </div>
+         </div>
+         
+        <div class="cgc-9 no listamenu">
+          <div class="cgc-12 no tcenter title">
+          <p>My Tip Menu</p>
+          <!-- Change the title of this section, plain text between paragraph tags -->
+          </div>
+             <div class="tiprequests w90">
+             
+                    <div id="tiprequest-1" class="cgc-12 no ledo">
+                       <div class="cgc-9 showtiprequest"><div>Add your tip request here</div>
+                       <!-- Change default plain text with your tip request, between div tags -->
+                       </div>
+                       <div class="cgc-3 tval tcenter btnhovers"><div>300 tokens</div>
+                       <!-- Change default plain text with your token amount, between div tags -->
+                       </div>
+                    </div>
+                    
+                    <div id="tiprequest-2" class="cgc-12 no ledo">
+                       <div class="cgc-9 showtiprequest"><div>Add your tip request here</div></div>
+                       <div class="cgc-3 tval tcenter btnhovers"><div>300 tokens</div></div>
+                    </div>
+                    
+                    <div id="tiprequest-3" class="cgc-12 no ledo">
+                       <div class="cgc-9 showtiprequest"><div>Add your tip request here</div></div>
+                       <div class="cgc-3 tval tcenter btnhovers"><div>300 tokens</div></div>
+                    </div>
+                    
+                    
+                    <div id="tiprequest-4" class="cgc-12 no ledo">
+                       <div class="cgc-9 showtiprequest"><div>Add your tip request here</div></div>
+                       <div class="cgc-3 tval tcenter btnhovers"><div>300 tokens</div></div>
+                    </div>
+                    
+                    
+                    <div id="tiprequest-5" class="cgc-12 no ledo">
+                       <div class="cgc-9 showtiprequest"><div>Add your tip request here</div></div>
+                       <div class="cgc-3 tval tcenter btnhovers"><div>300 tokens</div></div>
+                    </div>
+                    
+                    
+                    <div id="tiprequest-6" class="cgc-12 no ledo">
+                       <div class="cgc-9 showtiprequest"><div>Add your tip request here</div></div>
+                       <div class="cgc-3 tval tcenter btnhovers"><div>300 tokens</div></div>
+                    </div>
+                    
+                    
+                    <div id="tiprequest-7" class="cgc-12 no ledo">
+                       <div class="cgc-9 showtiprequest"><div>Add your tip request here</div></div>
+                       <div class="cgc-3 tval tcenter btnhovers"><div>300 tokens</div></div>
+                    </div>
+                    
+                    
+                    
+             </div>
+        </div>
+        
+      </div>
+  </div>
+  
+  
+  
+
+
+</div>
+
+
+
+</body>
+</html>
+</textarea>
+
+
+
+<p>Feel free to play with the markup code and add your own custom grpahics.</p>
+</div>
+
+<div class="cl-12">
+<h2>Resources</h2>
+<p>All graphic elements, custom font and markup code is running from your PC/laptop, no additional external resources necessary</p>
+<ul>
+<li><a href="../MyTipMenu.html" target="_blank">MyTipMenu.html</a></li>
+<li><a href="../images/" target="_blank">images folder</a></li>
+<li><a href="../Source_Editor.html" target="_blank">Offline Source Editor</a></li>
+<li class="tab"><a href="#markup">full markup code</a>
+<div id="markup"><div class="cl-12">
+<textarea spellcheck="false"><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OBS overlay - Tip Menu</title>
+<style>
+/**
+      Name: OBS overlay My Tip Menu - v1.0.T
+      Concept: Dan N & Dellany
+      Design : Dan N
+      Coded by: Dan N
+      URL: www.camgirl.cloud
+      |----------------------------------  
+      Need help installing this OBS overlay?
+      Or maybe you want a custom design for your live stream?
+      cssmfc@bitrix24.com
+**/
+* {-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+/*** makes text elements clear ***/
+body{width:100%;margin:0 auto;overflow:hidden;}
+
+.scr::-webkit-scrollbar{width: 8px;}.scr::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.scr::-webkit-scrollbar-thumb{-webkit-border-radius:10px; border-radius:10px;background: #333;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.scr::-webkit-scrollbar-thumb:window-inactive{background: rgba(204,0,0,.4);border:1px solid #900;}
+
+
+* {box-sizing: border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="cgc-"] {float: left;padding: 15px;border: 1px solid rgba(0,0,0,0.0);}.cgc-1 {width: 8.33%;}.cgc-2 {width: 16.66%;}.cgc-3 {width: 25%;}.cgc-4 {width: 33.33%;}.cgc-5 {width: 41.66%;}.cgc-6 {width: 50%;}.cgc-7 {width: 58.33%;}.cgc-8 {width: 66.66%;}.cgc-9 {width: 75%;}.cgc-10 {width: 83.33%;}.cgc-11 {width: 91.66%;}.cgc-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}
+/*** reset and responsive elements ***/
+
+/** Fonts **/
+
+@font-face {
+  font-family: 'MicroFLF';
+  src: url('font/MicroFLF.eot?#iefix') format('embedded-opentype'),  url('font/MicroFLF.woff') format('woff'), url('font/MicroFLF.ttf')  format('truetype'), url('font/MicroFLF.svg#MicroFLF') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*** Wrapper - main content ***/
+#main{margin:40px auto;}
+
+
+
+#tipmenu{background-color:rgba(0,0,0,0.0);-webkit-transform: translate(-100%, 0%) rotateY(30deg); transform: translate(-100%, 0%) rotateY(30deg); -webkit-animation: aratatipmenu 2s 2s ease-in-out forwards;animation: aratatipmenu 2s 2s ease-in-out forwards;-webkit-animation-delay: 1.4s;animation-delay: 1.4s;opacity:0;background-image:url(images/main_bg.png);background-repeat:no-repeat;background-size:cover;background-position:right; }
+/*** The wrapping element for Tip Menu box - you can change the main_bg.png background image here ***/
+
+.listamenu{background-color:rgba(0,0,0,0.0);height:500px;margin-top:20px;z-index:99;}
+/*** The wrapping element for List Menu ***/
+
+.title{color:#fff;background-image:url(images/header_bg.jpg);background-repeat:repeat-x;background-size:auto;background-position:0 0;line-height: normal;-moz-transform: scale(1) skew(-21deg, 0deg);-webkit-transform: scale(1) skew(-21deg, 0deg);transform: scale(1) skew(-21deg, 0deg);-webkit-border-radius:2px 15px 45px 70px;}
+.title p{line-height:10px;font-size:23px;padding:4px 0 5px;margin:13px auto 30px auto;text-transform:uppercase; font-family: 'MicroFLF', Tahoma, Geneva, sans-serif;-moz-transform: scale(1) skew(21deg, 0deg);-webkit-transform: scale(1) skew(21deg, 0deg);transform: scale(1) skew(21deg, 0deg);text-shadow:0 1px 5px #000;}
+/*** The wrapping element title - using plain text to edit the HTML markup source below. This is only the visual style ***/
+
+
+
+
+.tiprequests{height:1px;overflow:hidden;-webkit-animation: aratatips 2s 2s ease-in-out forwards;animation: aratatips 2s 2s ease-in-out forwards;-webkit-animation-delay: 2.6s;animation-delay: 2.6s;opacity:0;background-color:rgba(0,0,0,0.80);margin:-14px 5px 12px auto!important;top:-25px;}
+.w90{width:98%!important;margin:-13px 5px 12px auto!important;float:none;clear:left;position:relative;padding:0;-webkit-border-radius:0 0 16px 16px;border-radius:0 0 16px 16px;}
+[id|=tiprequest]{background-image: url(images/bg01.png);background-repeat: no-repeat;background-position:center;background-size:cover;-webkit-animation: movebg 1s 1s ease-in-out forwards;animation: movebg 1s 1s ease-in-out forwards;-webkit-animation-delay: 3s;animation-delay: 3s;opacity:0;}
+/*** This will change the background image bg01.png / the techy blue image behind each listed element ***/
+
+
+
+.showtiprequest div{
+	-webkit-transform: translate(0%, -35%) rotateY(10deg);
+	transform: translate(0%, -35%) rotateY(10deg);
+	-webkit-animation: view 3.5s 3.5s ease-in-out forwards;
+	animation: view 3.5s 3.5s ease-in-out forwards;
+	opacity:0;
+	padding:5px 8px 4px;
+	line-height:normal;
+	overflow:hidden;
+	background-color:#fff;
+	font-family: 'MicroFLF', Tahoma, Geneva, sans-serif;
+	color:#fff;}
+	
+#tiprequest-1 .showtiprequest div:nth-child(1){-webkit-animation-delay: 3s;animation-delay: 3s;}
+#tiprequest-2 .showtiprequest div:nth-child(2){-webkit-animation-delay: 4s;animation-delay: 4s;}
+#tiprequest-3 .showtiprequest div:nth-child(3){-webkit-animation-delay: 5s;animation-delay: 5s;}
+#tiprequest-4 .showtiprequest div:nth-child(4){-webkit-animation-delay: 6s;animation-delay: 6s;}
+#tiprequest-5 .showtiprequest div:nth-child(5){-webkit-animation-delay: 7s;animation-delay: 7s;}
+#tiprequest-6 .showtiprequest div:nth-child(6){-webkit-animation-delay: 8s;animation-delay: 8s;}
+#tiprequest-7 .showtiprequest div:nth-child(7){-webkit-animation-delay: 9s;animation-delay: 9s;}
+
+/*** Animation delay to show each listed element with animated delay. Do Not Add more of this ***/
+
+.tval div{
+	-webkit-animation: view 5s 5s ease-in-out forwards;
+	animation: view 5s 5s ease-in-out forwards;
+	opacity:0;
+	padding:6px 8px 5px;
+	line-height:normal;
+	overflow:hidden;
+	background-color:#fff;
+	font-family: 'MicroFLF', Tahoma, Geneva, sans-serif;
+	color:#fff;
+	font-size:15px;
+	background-image:url(images/tokens_bg.jpg);background-repeat:repeat-x;background-position:center;background-size:auto;-webkit-transform: rotateX(-180deg) skew(190deg, 0deg);transform:  rotateX(-180deg) skew(190deg, 0deg);-webkit-clip-path: polygon(11% 0, 100% 0, 91% 100%, 0 100%);clip-path: polygon(11% 0, 100% 0, 91% 100%, 0 100%);-webkit-border-radius:0 10px 0 10px;border-radius:0 10px 0 10px;}
+	
+#tiprequest-1 .tval div:nth-child(1){-webkit-animation-delay: 4s;animation-delay: 4s;}
+#tiprequest-2 .tval div:nth-child(2){-webkit-animation-delay: 5s;animation-delay: 5s;}
+#tiprequest-3 .tval div:nth-child(3){-webkit-animation-delay: 6s;animation-delay: 6s;}
+#tiprequest-4 .tval div:nth-child(4){-webkit-animation-delay: 7s;animation-delay: 7s;}
+#tiprequest-5 .tval div:nth-child(5){-webkit-animation-delay: 8s;animation-delay: 8s;}
+#tiprequest-6 .tval div:nth-child(6){-webkit-animation-delay: 9s;animation-delay: 9s;}
+#tiprequest-7 .tval div:nth-child(7){-webkit-animation-delay: 10s;animation-delay: 10s;}
+
+/*** Animation delay to show for value of the token amount / each listed element visible with animated delay. Do Not Add more of this ***/
+
+[id|=tiprequest]{-webkit-clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%, 0 38%);
+clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%, 0 38%);}
+
+.btnhovers{background-image: url(images/bghvr.png);background-repeat:no-repeat;background-position:-300% 0%;background-size:100px 200px;-webkit-animation-delay: 3s;animation-delay: 3s;-webkit-animation: hvr  3s 3s ease-in-out forwards;animation: hvr  3s 3s ease-in-out forwards;}
+/*** This is the background image animated with CSS3, a shine overlay on top of the blue background image ***/
+
+.pozamodel{-webkit-transform: rotate(0);transform: rotate(0);z-index:10000;}
+.pozamodel img{-webkit-border-radius:100%;border-radius:100%;margin:-40px 0 0 5px;-webkit-transform:scale(1.2,1.2) rotate(0);transform:scale(1.2,1.2) rotate(0);border:5px solid rgba(0,0,0,0.50);z-index:99999;border-top:5px solid #900;border-right:5px solid #900;border-bottom:5px solid #900;border-left:5px solid #09C;-webkit-animation: border 3s 3s ease-in-out infinite;animation: border 3s 3s ease-in-out infinite;}
+/*** This is used for animating the model's border image red, dark red, blue ***/
+
+
+.mtitle p{color:#fff;font-family: 'MicroFLF', Tahoma, Geneva, sans-serif;background-color:rgba(0,0,0,0.50);padding:10px 0 11px;-webkit-clip-path: polygon(4% 0, 97% 0, 100% 50%, 96% 100%, 4% 100%, 0 49%);
+clip-path: polygon(4% 0, 97% 0, 100% 50%, 96% 100%, 4% 100%, 0 49%);border-top:5px solid #900;border-bottom:5px solid #09C;}
+/*** This is the style used for Model's Name box ***/
+
+/** Animations **/
+@-webkit-keyframes aratatipmenu {
+    0% {-webkit-transform: translate(-100%, 0%) rotateY(30deg); opacity:0.5;}
+	100% {-webkit-transform: translate(0%, 0%) rotateY(0deg);  opacity:1;}
+	}
+
+
+@keyframes aratatipmenu {
+    0% {transform: translate(-100%, 0%) rotateY(30deg); opacity:0.5;}
+	100% {transform: translate(0%, 0%) rotateY(0deg);  opacity:1;}
+	}
+
+@-webkit-keyframes aratatips {
+    0% {height:1px;overflow:hidden; opacity:0.5;}
+	100% {height:440px;overflow:hidden; opacity:1;}
+	}
+
+
+@keyframes aratatips {
+    0% {height:1px;overflow:hidden; opacity:0.5;}
+	100% {height:440px;overflow:hidden; opacity:1;}
+	}
+
+@-webkit-keyframes view {
+    0% {-webkit-transform: translate(-20%, 5%) rotateY(90deg); opacity:0;}
+	100% {-webkit-transform: translate(0%, 5%) rotateY(0deg);  opacity:1;background-color: transparent;}
+	}
+
+
+@keyframes view {
+    0% {transform: translate(-20%, 5%) rotateY(90deg); opacity:0;}
+	100% {transform: translate(0%, 5%) rotateY(0deg);  opacity:1;background-color: transparent;}
+	}
+	
+	
+@-webkit-keyframes movebg{
+    0% {background-size:1px 1px;background-position:0 -100%;opacity:0;}
+	100% {background-size:cover;background-position:0 50%;opacity:1;}
+	}
+
+
+@keyframes movebg {
+    0% {background-size:1px 1px;background-position:0 -100%;opacity:0;}
+	100% {background-size:cover;background-position:0 50%;opacity:1;}
+	}
+	
+@-webkit-keyframes hvr{
+    0% {background-position:-400% 0%;}
+	100% {background-position:130% 0%;}
+	}
+
+
+@keyframes hvr {
+    0% {background-position:-400% 0%;}
+	100% {background-position:130% 0%;}
+	}
+@-webkit-keyframes border {
+    0% {-webkit-transform: translate(-100%, 0%) rotateY(30deg); opacity:0.5;}
+	100% {-webkit-transform: translate(0%, 0%) rotateY(0deg);  opacity:1;}
+	}
+
+
+@keyframes border {
+    0% {
+		border-top:5px solid #f00;
+	    border-right:5px solid #900;
+		border-bottom:5px solid #f00;
+		border-left:5px solid #09C;
+		}
+	25% {
+		border-top:5px solid #09C;
+		border-right:5px solid #f00;
+		border-bottom:5px solid #900;
+		border-left:5px solid #f00;
+		}
+	50% {
+		border-top:5px solid #f00;
+		border-right:5px solid #09C;
+		border-bottom:5px solid #f00;
+		border-left:5px solid #900;
+		}
+	75% {
+		border-top:5px solid #900;
+		border-right:5px solid #f00;
+		border-bottom:5px solid #09C;
+		border-left:5px solid #f00;
+		}
+	100% {
+		border-top:5px solid #f00;
+		border-right:5px solid #900;
+		border-bottom:5px solid #f00;
+		border-left:5px solid #09C;
+		}
+	}
+</style>
+</head>
+
+<body>
+
+<div id="main" class="cgc-12">
+
+
+
+
+  <div id="tipmenu" class="cgc-8">
+      <div class="cgc-12 tipmenu no">
+      
+         <div class="cgc-3 no imgresp tcenter pozamodel">
+          <img src="images/pic05.jpg"/>
+          <!-- Change Model's image here, between double quotes, make sure its a square image -->
+          <div class="cgc-12 tcenter mtitle">
+             <p>Model Name</p>
+             <!-- Change Model Name here, between paragraph tags -->
+          </div>
+         </div>
+         
+        <div class="cgc-9 no listamenu">
+          <div class="cgc-12 no tcenter title">
+          <p>My Tip Menu</p>
+          <!-- Change the title of this section, plain text between paragraph tags -->
+          </div>
+             <div class="tiprequests w90">
+             
+                    <div id="tiprequest-1" class="cgc-12 no ledo">
+                       <div class="cgc-9 showtiprequest"><div>Add your tip request here</div>
+                       <!-- Change default plain text with your tip request, between div tags -->
+                       </div>
+                       <div class="cgc-3 tval tcenter btnhovers"><div>300 tokens</div>
+                       <!-- Change default plain text with your token amount, between div tags -->
+                       </div>
+                    </div>
+                    
+                    <div id="tiprequest-2" class="cgc-12 no ledo">
+                       <div class="cgc-9 showtiprequest"><div>Add your tip request here</div></div>
+                       <div class="cgc-3 tval tcenter btnhovers"><div>300 tokens</div></div>
+                    </div>
+                    
+                    <div id="tiprequest-3" class="cgc-12 no ledo">
+                       <div class="cgc-9 showtiprequest"><div>Add your tip request here</div></div>
+                       <div class="cgc-3 tval tcenter btnhovers"><div>300 tokens</div></div>
+                    </div>
+                    
+                    
+                    <div id="tiprequest-4" class="cgc-12 no ledo">
+                       <div class="cgc-9 showtiprequest"><div>Add your tip request here</div></div>
+                       <div class="cgc-3 tval tcenter btnhovers"><div>300 tokens</div></div>
+                    </div>
+                    
+                    
+                    <div id="tiprequest-5" class="cgc-12 no ledo">
+                       <div class="cgc-9 showtiprequest"><div>Add your tip request here</div></div>
+                       <div class="cgc-3 tval tcenter btnhovers"><div>300 tokens</div></div>
+                    </div>
+                    
+                    
+                    <div id="tiprequest-6" class="cgc-12 no ledo">
+                       <div class="cgc-9 showtiprequest"><div>Add your tip request here</div></div>
+                       <div class="cgc-3 tval tcenter btnhovers"><div>300 tokens</div></div>
+                    </div>
+                    
+                    
+                    <div id="tiprequest-7" class="cgc-12 no ledo">
+                       <div class="cgc-9 showtiprequest"><div>Add your tip request here</div></div>
+                       <div class="cgc-3 tval tcenter btnhovers"><div>300 tokens</div></div>
+                    </div>
+                    
+                    
+                    
+             </div>
+        </div>
+        
+      </div>
+  </div>
+  
+  
+  
+
+
+</div>
+
+
+
+</body>
+</html>
+
+</textarea></div>
+<div class="cl-12 tcenter"><a href="#ink">x Close</a></div>
+</div></li>
+</ul>
+</div>
+
+<div class="cl-12 tcenter">
+<p>If you have suggestions, questions or feedback, feel free to post on <a href="https://camgirl.cloud/support/forum/download/obs-overlays/" target="_blank">support forum community</a><br/> More overlays will be provided for download on <a href="https://camgirl.cloud/" target="_blank">Camgirl Live Editor</a></p>
+</div>
+</div>
+
+<div class="cl-12 footer tcenter"><p>free download provided by <a href="https://cssmfc.github.io/credits/dan/index.html" target="_blank">Dan N</a> from <a href="https://camgirl.cloud/" target="_blank">Camgirl Live Editor</a></div>
+
+</body>
+</html>
