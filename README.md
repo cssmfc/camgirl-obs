@@ -23,7 +23,7 @@ OBS has become more and more popular among webcam performers and new necessities
 [OBS is a free downloadable software](https://obsproject.com/) which allows recording, editing and live streaming directly from user’s device.
 The overlay is a piece of content (image, text, web page) displayed on top of a live stream scene.
 
-Feel free to [browse through our available templates](https://camgirl.cloud/support/forum/download/obs-overlays/) and post your suggestions, feedback on support forum.
+Feel free to [browse through our available templates](https://github.com/cssmfc/obs/tree/master/obs_overlays), download, test, develop. Post your suggestions, feedback on [CGC support forum](https://camgirl.cloud/support/forum/download/obs-overlays/).
 
 :wrench: General install of OBS overlays downloaded form our platform:
 1. Download and extract the content from zip file
