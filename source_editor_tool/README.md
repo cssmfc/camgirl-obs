@@ -1,7 +1,7 @@
 # Source Editor 
 *Basic offline Source viewer and Editor*
 
-[![offline Source Editor - Release:](https://img.shields.io/badge/source%20editor-0.1.Editor-brightgreen.svg)](https://github.com/cssmfc/obs/releases/tag/v1.0.Editor)
+[![offline Source Editor - Release:](https://img.shields.io/badge/source%20editor-0.1.Editor-brightgreen.svg)](https://github.com/cssmfc/obs/releases/tag/v1.0.Editor) [ONLINE VERSION](https://cssmfc.github.io/assets/source_editor.html)
 
 
 ![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/source_editor_tool/cgc_cover_source_editor.jpg)
@@ -14,6 +14,7 @@
 * [about](README.md#about)
 * [content](README.md#content)
 * [author note](README.md#author-note)
+* [task list](README.md#task-list)
 * [support and contact](README.md#contact)
 * [social network](README.md#links)
 
@@ -108,6 +109,14 @@ font-family:Courier, serif;border-radius:3px;-moz-border-radius:3px;-webkit-bord
 ```
 Enjoy
 
+
+### Task list
+- [x] provide online demo
+- [ ] show syntax format style
+- [x] provide *how to...*
+- [ ] develop as standalone Chrome extension
+
+***
 
 ### Contact
 
