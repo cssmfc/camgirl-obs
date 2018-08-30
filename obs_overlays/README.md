@@ -22,7 +22,7 @@
 
 
 
-![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/assets/obs_battle01_thumb.jpg) | ![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/assets/obs_empty_thumb.jpg)
+![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/assets/obs_battle01_thumb.jpg) | ![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/assets/obs_empty_thumb.png)
 ------------ | -------------
 **OBS overlay Battle of the Braves** | **Comming Soon**
 [![OBS overlay download](https://raw.githubusercontent.com/cssmfc/obs/master/assets/download_files.png)](https://github.com/cssmfc/obs/releases/tag/v1.0.Stats) | [![OBS overlay download](https://raw.githubusercontent.com/cssmfc/obs/master/assets/download_files.png)](https://github.com/cssmfc/obs/)
