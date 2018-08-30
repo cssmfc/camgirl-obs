@@ -1,6 +1,6 @@
 # OBS overlay - My Tip Menu
 
-![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_my_tipmenu/how%20to%20use/assets/cover_obs_overlay_bar.jpg)
+![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_my_tipmenu/how%20to%20use/assets/stats_cover_obs_overlay.jpg)
 
 
 ### Index
@@ -46,22 +46,18 @@ To use this overlay on your stream follow the install steps suggested below
 
 1. Open **OBS** [download OBS if necessary](https://obsproject.com/)
 2. From **Sources** zone click the :heavy_plus_sign: sign/icon
-
-![New Source](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_my_tipmenu/how%20to%20use/assets/obs-add-new-source.jpg)
-
 3. Next step is to select **Browser** from available options 
-![Select Browser](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_my_tipmenu/how%20to%20use/assets/obs-select-source.jpg)
+![New Source](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_my_tipmenu/how%20to%20use/assets/1obs_add_new.jpg)
 
 4. **Create New** will show up, give it a name, easy to spot 
-![Rename](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_my_tipmenu/how%20to%20use/assets/obs-rename-browser-source.jpg)
+![Select Browser](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_my_tipmenu/how%20to%20use/assets/2obs_rename.jpg)
 
 5. **Local File** - Browse. **Browse** for the file Bars.html. Make sure you select **Local File** option 
-![Select Local File](https://github.com/cssmfc/obs/blob/master/obs_overlays/obs_my_tipmenu/how%20to%20use/assets/obs-local-file.jpg)
+![Select Local File](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_my_tipmenu/how%20to%20use/assets/3obs_local_file.jpg)
  Settings visible in screenshot
  
-
 7. Drag the red corners to fit your main screen source for better position
-![Position](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_my_tipmenu/how%20to%20use/assets/obs-position-overlay.jpg)
+![Position](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_my_tipmenu/how%20to%20use/assets/4obs_reposition_resize.jpg)
 
 8. Optional, you can play with Transition and Fade Transition options when triggering this overlay, it is up to you.
 
