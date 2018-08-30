@@ -1,7 +1,9 @@
 # Source Editor 
 *Basic offline Source viewer and Editor*
 
-[![offline Source Editor - Release:](https://img.shields.io/badge/source%20editor-0.1.Editor-brightgreen.svg)](https://github.com/cssmfc/obs/releases/tag/v1.0.Editor) [ONLINE VERSION](https://cssmfc.github.io/assets/source_editor.html)
+[![offline Source Editor - Release:](https://img.shields.io/badge/source%20editor-0.1.Editor-brightgreen.svg)](https://github.com/cssmfc/obs/releases/tag/v1.0.Editor) 
+
+**:computer: [ONLINE VERSION](https://cssmfc.github.io/assets/source_editor.html)**
 
 
 ![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/source_editor_tool/cgc_cover_source_editor.jpg)
