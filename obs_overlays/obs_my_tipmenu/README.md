@@ -23,8 +23,11 @@ This OBS overlay shows animated content (using CSS3 keyframes) to power up the T
  
 
 **OBS overlay type:** browser
+
 **Source:** local
+
 **Coded:** HTML, CSS
+
 **Resources:** font used MicroFLF, images
 
 
