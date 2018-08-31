@@ -17,7 +17,7 @@
 
 ### About
 This OBS overlay shows animated content (using CSS3 keyframes) to power up the Tip Menu box and components.
-* Model's image - animated with CSS3 keyframes - must be a sqare image (i.e. 400x400, 550x550, 700x700)
+* Model's image - animated with CSS3 keyframes - must be a square image (i.e. 400x400, 550x550, 700x700)
 * Model's name - editable plain text - editing is made via source markup code
 * Editable text - My Tip Menu, Add your tip request here, 300 tokens
  
