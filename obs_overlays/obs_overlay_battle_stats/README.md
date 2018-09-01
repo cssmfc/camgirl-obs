@@ -38,8 +38,11 @@ Please note that after the overlay has been enabled, it has a 1.4s before starti
  
 
 **OBS overlay type:** browser
+
 **Source:** local
+
 **Coded:** HTML, CSS
+
 **Resources:** MicroFLF font, Metamorphous font, static and animated images
 
 
