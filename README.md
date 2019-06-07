@@ -25,7 +25,7 @@ The overlay is a piece of content (image, text, web page) displayed on top of a 
 
 Feel free to [browse through our available templates](https://github.com/cssmfc/obs/tree/master/obs_overlays), download, test, develop. Post your suggestions, feedback on [CGC support forum](https://camgirl.cloud/support/forum/download/obs-overlays/).
 
-:wrench: General install of OBS overlays downloaded form our platform:
+:wrench: General install of OBS overlays downloaded from our platform:
 1. Download and extract the content from zip file
 2. Open OBS, click the + button/icon from Sources manager window
 3. Select the Browser option from the available options panel
