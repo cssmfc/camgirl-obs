@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OBS Show Images - Install and Use</title>
+<style>
+body{margin:0 auto;-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;background-color:#f1f1f1;width:90%;}
+*,
+*::before,
+*::after {box-sizing: border-box;}
+a:link,a:visited{color:#09C;text-decoration:none;}a:hover {color:#F39;text-decoration:none;}
+.xcr::-webkit-scrollbar {width:8px;}.xcr::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:10px;border-radius:10px;}.xcr::-webkit-scrollbar-thumb {-webkit-border-radius:10px;border-radius:10px;background:#936;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}.xcr::-webkit-scrollbar-thumb:window-inactive {background:rgba(204,0,0,.4);border:1px solid #333;}* {box-sizing: border-box;}html{}* {box-sizing:border-box;}.line::after {content: "";clear: both;display: inline-table;}[class*="gr-"] {float: left;padding: 15px;border: 0px solid red;}.gr-1 {width: 8.33%;}.gr-2 {width: 16.66%;}.gr-3 {width: 25%;}.gr-4 {width: 33.33%;}.gr-5 {width: 41.66%;}.gr-6 {width: 50%;}.gr-7 {width: 58.33%;}.gr-8 {width: 66.66%;}.gr-9 {width: 75%;}.gr-10 {width: 83.33%;}.gr-11 {width: 91.66%;}.gr-12 {width: 100%;}.no{padding:0;}.tleft {text-align:left;}.tright {text-align:right;}.tcenter {text-align:center;}.tfleft {float:left;}.tfright {float:right;}.imgresp img, img.imgresp{display:block;width:100%;height:auto;margin:0 auto;}.divider{opacity:0;}
+/*** Customization ***/
+
+
+
+#main{background-color:#fff;color:#666;box-shadow:0px 0px 14px #999;}
+h1,h2,h3,h4,h5,h6{font-size:28px;font-weight:lighter;}
+
+#header{background: #d32ac5;
+background: -moz-linear-gradient(-45deg,  #d32ac5 0%, #a424b5 36%, #2989d8 100%);
+background: -webkit-linear-gradient(-45deg,  #d32ac5 0%,#a424b5 36%,#2989d8 100%);
+background: linear-gradient(135deg,  #d32ac5 0%,#a424b5 36%,#2989d8 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d32ac5', endColorstr='#2989d8',GradientType=1 );margin-bottom:20px;}
+#header h1{color:#fff;text-shadow:0 1px 1px #444;font-size:3rem;font-weight:bold;font-family:Tahoma, Geneva, sans-serif;}
+.box{font-size:18px;font-family:sans-serif;font-weight:100;}
+ul.noli li{list-style:none;margin-left:8px;transition:all .3s;}ul.noli li:before{content:'\2713';margin-right:12px;}
+ul{list-style-position:outside;background-color:#f1f1f1;padding:7px 0 8px;}
+.noli li:hover{list-style:none;margin-left:10px;}
+.plus-button{padding:2px 5px;text-align:center;background-color:#777;color:#f1f1f1;font-size:19px;margin-left:5px;margin-right:5px;}
+.screens p{font-size:17px;}
+.scre{}
+.scre:hover{background-color:rgba(255,255,153,0.5);}
+.footer{background: #d32ac5;
+background: -moz-linear-gradient(-45deg,  #d32ac5 0%, #a424b5 36%, #2989d8 100%);
+background: -webkit-linear-gradient(-45deg,  #d32ac5 0%,#a424b5 36%,#2989d8 100%);
+background: linear-gradient(135deg,  #d32ac5 0%,#a424b5 36%,#2989d8 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d32ac5', endColorstr='#2989d8',GradientType=1 );}
+.fo, .fo p,.credits,.credits p{font-family:sans-serif;color:#fff;}
+.footer a,.footer a:visited{color:#FC0;text-decoration:none;}
+.footer a:hover{color:#000;text-decoration:none;}
+.credits{font-size:14px;}
+#author{display:none;}
+#author:target{display:block;width:100%;height:100%;position:fixed;top:0;left:0;background-color:rgba(0,0,0,.90);z-index:9999;font-family:sans-serif;font-size:17px;font-weight:normal;color:#555;}
+.marginit{margin:4% auto;background-color:#fff;box-shadow:5px 7px 0 #F93;}
+a.close,a.close:visited{display:block;width:30px;height:30px;color:#555;text-decoration:none;font-size:12px;margin-top:-10px;text-align:right;}
+a.close:hover{color:#069;}
+@media only screen and (max-width: 768px)
+{body{font-size:14px;color:#666;font-family:Verdana, Geneva, sans-serif;}[class*="gr-"]{width:100%;}h1,h2,h3,h4,h5,h6{font-size:20px;font-weight:lighter;}.box{font-size:15px;}}
+* html .line {height:1%;}
+</style>
+</head>
+
+<body>
+
+<div id="main" class="gr-12 no">
+
+  <div id="header" class="gr-12">
+   <h1>OBS Overlay - Image Pop-up</h1>
+  </div>
+
+<div class="line">
+
+ <div class="gr-8 box">
+   <h2>About</h2>
+   <p>This OBS overlay is showing 3 images animated with help of CSS3</p>
+   <p>Digital pack comes with 5 versions using different animations</p>
+   <p>No external resources required (browser-based local file and images provided)</p>
+ </div>
+ 
+ <div class="gr-4 box">
+   <h2>Available versions</h2>
+   <ul class="noli">
+     <li><a href="DropGraphics_message_v1.html" target="_blank">version 1 - demo</a></li>
+     <li><a href="DropGraphics_message_v2.html" target="_blank">version 2 - demo</a></li>
+     <li><a href="DropGraphics_message_v3.html" target="_blank">version 3 - demo</a></li>
+     <li><a href="DropGraphics_message_v4.html" target="_blank">version 4 - demo</a></li>
+     <li><a href="DropGraphics_message_v5.html" target="_blank">version 5 - demo</a></li>
+   </ul>
+ </div>
+ 
+</div>
+
+
+
+<div class="gr-12 box">
+   <h2>How to install</h2>
+   <p>Install process is pretty simple and does not require extensive skills </p>
+   <p>For best performance please follow the steps below:</p>
+ </div>
+
+   <div class="gr-12 box screens line no">
+     
+     <div class="gr-6 imgresp scre">
+     <p><strong>Step 1</strong></p>
+     <p>Click the <span class="plus-button">+</span> on Sources panel.</p>
+     <br/>
+        <a href="assets/screen01_add_button.jpg" target="_blank"><img src="assets/screen01_add_button.jpg" alt="Step 1"/></a>
+     </div>
+     
+     <div class="gr-6 imgresp scre">
+     <p><strong>Step 2</strong></p>
+     <p>Select <strong>Browser</strong> option from pop-menu.</p><br/>
+     <a href="assets/screen02_select_browser.jpg" target="_blank"><img src="assets/screen02_select_browser.jpg" alt="Step 2"/></a>
+     </div>
+     
+   </div>
+   
+    <div class="gr-12 box screens line no">  
+     <div class="gr-6 imgresp scre">
+     <p><strong>Step 3</strong></p>
+     <p>Check the box for <strong>Local File</strong> and browse for your fav version</p><br/>
+     <a href="assets/screen03_select_local.jpg" target="_blank"><img src="assets/screen03_select_local.jpg" alt="Step 3"/></a>
+     </div>
+     
+     
+     <div class="gr-6 imgresp scre">
+     <p><strong>Step 4</strong></p>
+     <p>Optional, you can play with Transition and Fade Transition options when triggering this overlay, it is up to you.</p>
+     <a href="assets/screen04.jpg" target="_blank"><img src="assets/screen04.jpg" alt="Step 4"/></a>
+     </div>
+     
+     
+     
+     
+   </div>
+   
+   
+   
+   
+   
+   <div id="note" class="gr-12 box">
+   <h2>Note</h2>
+   <ul class="noli">
+   <li>the overlays are not interactive, not triggered by tips.</li>
+<li>all editing process is made via source code</li>
+<li>all resources run locally from your device (desktop/laptop)</li>
+<li>the overlay is triggered manually by the model</li>
+<li>overlay developed for Chaturbate webcam performers.</li>
+</ul>
+ </div>
+   
+   
+   <div class="gr-12 box">
+   <h2>Change images</h2>
+   <p>You can replace default images inside <a href="images/" target="_blank">images</a> folder<br/>
+   Your images should have the same name, same format (jpeg) and same width and height.<br/>
+   If you have experience with editing the source markup, open the .html file in your fav. editor and replace the image url path with your own graphics</p>
+ </div>
+   
+   
+
+<div class="gr-12 footer line">
+  <div class="gr-8 fo">
+    <p>For more OBS overlays, feel free to visit our support forum <a href="https://camgirl.cloud/support/forum/download/obs-overlays/" target="_blank">OBS category</a><br/>
+    Upon request our service is designing and coding custom browser-based OBS overlays for camgirls</div>
+  <div class="gr-4 fo"></div>
+  <div class="gr-12 tright credits">2019 a project by <a href="#author">Dan N</a> from camgirl.cloud</div>
+</div>
+
+
+
+
+</div>
+
+<div id="author">
+
+
+<div class="gr-2">&nbsp;</div>
+   <div class="gr-8 line no marginit">
+     <div class="gr-11"><h3>Author</h3></div>
+     <div class="gr-1"><a class="close" href="#note"><span>close</span></a></div>
+     <div class="gr-12">
+       <div class="gr-12 no">
+         <p>I'm Dan N, web designer at <a href="https://camgirl.cloud/">Camgirl.Cloud</a></p>
+         <p>We do designs, templates, custom projects for webcam performers and studio owners</p><p>Feel free to visit our website or contact us on <a href="https://twitter.com/CSSMFC">@cssmfc</a> if interested in our free or paid services</p> 
+         <p class="gr-12 tcenter"><a href="https://twitter.com/messages/compose?recipient_id=628732933">Twitter DM</a></p>
+       </div>
+       </div>
+   </div>
+   <div class="gr-2">&nbsp;</div>
+</div>
+
+</body>
+</html>

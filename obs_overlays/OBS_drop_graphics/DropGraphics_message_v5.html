@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OBS Overlay Drop Graphics v5</title>
+<style>
+body{margin:0 auto;-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;}
+*,
+*::before,
+*::after {box-sizing: border-box;}
+
+
+.container{display:block;width:450px;height:auto;margin:10px 5px auto 5px;overflow:hidden;-webkit-transform: translate(0%, 0%); transform: translate(0%, 0%); -webkit-animation: goaway 1s 1s ease-in-out forwards;animation: goaway 1s 1s ease-in-out forwards;-webkit-animation-delay: 19s;animation-delay: 19s;opacity:1;white-space: nowrap;z-index:9999;background-color:rgba(0,0,0,.70);padding:15px 0 15px;border-radius:10px;}
+
+[class*="message-"] img{display:block;width:100%;height:auto;margin:0 auto;}
+
+#msg1{-webkit-transform: translate(0%, -100%) rotateY(90deg); transform: translate(0%, -100%) rotateY(90deg); -webkit-animation: messageone 1s 1s ease-in-out forwards;animation: messageone 1s 1s ease-in-out forwards;-webkit-animation-delay: 1s;animation-delay: 1s;opacity:0;white-space: nowrap;z-index:999;}
+
+#msg2{-webkit-transform: translate(0%, -100%) rotateY(90deg); transform: translate(0%, -100%) rotateY(90deg); -webkit-animation: messagetwo 1s 1s ease-in-out forwards;animation: messagetwo 1s 1s ease-in-out forwards;-webkit-animation-delay: 2s;animation-delay: 2s;opacity:0;white-space: nowrap;z-index:99;}
+
+#msg3{-webkit-transform: translate(0%, -100%) rotateY(90deg); transform: translate(0%, -100%) rotateY(90deg); -webkit-animation: messagethree 1s 1s ease-in-out forwards;animation: messagethree 1s 1s ease-in-out forwards;-webkit-animation-delay: 3s;animation-delay: 3s;opacity:0;white-space: nowrap;z-index:9;}
+
+
+@-webkit-keyframes messageone {
+    0% {-webkit-transform: translate(0%, -100%); opacity:0;}
+	50% {-webkit-transform: translate(0%, 1%) rotateY(-90deg); opacity:0;}
+	100% {-webkit-transform: translate(0%, 1%) rotateY(0deg);  opacity:1;}
+	}
+
+
+@keyframes messageone {
+    0% {transform: translate(0%, -100%); opacity:0;}
+	50% {-webkit-transform: translate(0%, 1%) rotateY(-90deg); opacity:0;}
+	100% {transform: translate(0%, 1%) rotateY(0deg);  opacity:1;}
+	}
+	
+@-webkit-keyframes messagetwo {
+    0% {-webkit-transform: translate(0%, -100%); opacity:0;}
+	50% {-webkit-transform: translate(0%, 1%) rotateY(-90deg); opacity:0;}
+	100% {-webkit-transform: translate(0%, 1%) rotateY(0deg);  opacity:1;}
+	}
+
+
+@keyframes messagetwo {
+    0% {transform: translate(0%, -100%); opacity:0;}
+	50% {-webkit-transform: translate(0%, 1%) rotateY(-90deg); opacity:0;}
+	100% {transform: translate(0%, 1%) rotateY(0deg);  opacity:1;}
+	}
+	
+@-webkit-keyframes messagethree {
+    0% {-webkit-transform: translate(0%, -100%); opacity:0;}
+	50% {-webkit-transform: translate(0%, 1%) rotateY(-90deg); opacity:0;}
+	100% {-webkit-transform: translate(0%, 1%) rotateY(0deg);  opacity:1;}
+	}
+
+
+@keyframes messagethree {
+    0% {transform: translate(0%, -100%); opacity:0;}
+	50% {-webkit-transform: translate(0%, 1%) rotateY(-90deg); opacity:0;}
+	100% {transform: translate(0%, 1%) rotateY(0deg);  opacity:1;}
+	}	
+	
+	
+	@-webkit-keyframes goaway {
+    0% {-webkit-transform: translate(0%, 0%); opacity:1;}
+	100% {-webkit-transform: translate(-100%, -100%) rotateY(70deg);  opacity:0;}
+	}
+
+
+@keyframes goaway {
+    0% {transform: translate(0%, 0%); opacity:1;}
+	100% {transform: translate(-100%, -100%) rotateY(70deg);  opacity:0;}
+	}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+   <div id="msg1" class="message-one"><img src="images/msg1.jpg"/></div>
+   <div id="msg2" class="message-two"><img src="images/msg2.jpg"/></div>
+   <div id="msg3" class="message-three"><img src="images/msg3.jpg"/></div>
+   
+
+
+
+</div>
+
+
+</body>
+</html>
