@@ -65,4 +65,4 @@ Install instructions and full documentation along with all necessary resources p
 
 ***
 
-[Twitter](https://www.twitter.com/CSSMFC) | [Website](https://camgirl.cloud/) |  :octocat: [on GitHub](https://cssmfc.github.io/)
+[Twitter](https://www.twitter.com/CamgirlCloud) | [Website](https://camgirl.cloud/) |  :octocat: [on GitHub](https://cssmfc.github.io/)
