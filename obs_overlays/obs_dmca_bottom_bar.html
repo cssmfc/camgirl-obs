@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OBS DMCA Overlay</title>
+<style>
+*{box-sizing:border-box;}
+body{width:100%;margin:0 auto;}
+#dmca{display:block;width:100%;height:auto;margin:0 auto;position:fixed;bottom:20px;left:0;background-color:rgba(0,0,0,.80);box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);box-sizing:border-box;font-size: calc(16px + 6 * ((100vw - 320px) / 680));font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;font-weight:100;}
+.dmca_image{display:block;width:6%;height:auto;float:left;padding:0;}
+.dmca_image svg{display:block;width:100%;height:auto;}
+.dmca_textonscreen{display:block;width:91%;height:auto;padding:0;float:left;font-size: calc(18px + 6 * ((100vw - 320px) / 680));font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;}
+.dmca_textonscreen .mholder{display:block;width:90%;height:auto;overflow:hidden;margin:0 auto;color:#fff;padding:.8em 1em .7em;white-space: nowrap;}
+
+.clear{display:block;width:100%;height:0px;float:none;clear:left;margin:0 auto;opacity:0;overflow:hidden;}
+
+.marquee {height: 50px;overflow: hidden;position: relative;box-shadow:inset 3px 0 11px #000,0 2px 4px -2px #333;background-color:rgba(0,0,0,0.30);}
+.marquee p {position: absolute;width: 100%;height:100%;white-space: nowrap; margin: 0;padding:.3em .7em;text-align: center;-moz-transform: translateX(100%);-webkit-transform: translateX(100%);transform: translateX(100%); -moz-animation: scroll-left 45s linear infinite;
+-webkit-animation: scroll-left 45s linear infinite;animation: scroll-left 45s linear infinite;}
+        
+        @-moz-keyframes scroll-left {
+            0% {-moz-transform: translateX(100%);}
+            100% {-moz-transform: translateX(-180%);}
+			}
+        
+        @-webkit-keyframes scroll-left {
+            0% {-webkit-transform: translateX(100%);}
+            100% {-webkit-transform: translateX(-180%);}
+			}
+        
+        @keyframes scroll-left {
+            0% { -moz-transform: translateX(100%); -webkit-transform: translateX(100%);transform: translateX(100%);}
+            100% {-moz-transform: translateX(-180%);-webkit-transform: translateX(-180%); transform: translateX(-180%);}
+			}
+
+
+
+
+/*** Performer Name color ***/
+.model{color:#099;font-weight:500;}
+
+
+/*** Twitter Username and SVG Icon***/
+.twitter{font-size: calc(16px + 6 * ((100vw - 320px) / 680));}
+
+.twitter-icon {width: 1.5em;height: 1.5em;vertical-align:middle;}
+.twitter-icon path,
+.twitter-icon polygon,
+.twitter-icon rect {fill: #4691f6;}
+.twitter-icon circle {stroke: #4691f6;stroke-width: 1;}
+
+
+/*** Show/Hide - Twitter block ***/
+.hide{display:none; float:right;margin-left:5%;}
+.show{display:block; float:right;margin-left:5%;}
+</style>
+</head>
+
+<body>
+
+
+
+
+<div id="dmca">
+
+<div class="dmca_image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+	<defs>
+		<image width="240" height="240" id="img1" href="data:image/png;base64,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"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="0" y="0" />
+</svg></div>
+    <div class="dmca_textonscreen">
+       <div class="mholder">
+       
+       <div class="show"><svg class="twitter-icon" viewBox="0 0 20 20">
+							<path fill="none" d="M14.467,6.707c-0.34,0.198-0.715,0.342-1.115,0.419c-0.318-0.335-0.775-0.545-1.279-0.545c-0.969,0-1.754,0.773-1.754,1.727c0,0.135,0.015,0.267,0.045,0.394C8.905,8.628,7.612,7.94,6.747,6.896C6.596,7.151,6.509,7.448,6.509,7.764c0,0.599,0.31,1.128,0.78,1.438C7.002,9.192,6.732,9.115,6.495,8.985c0,0.007,0,0.014,0,0.021c0,0.837,0.605,1.535,1.408,1.694c-0.147,0.04-0.302,0.06-0.462,0.06c-0.113,0-0.223-0.011-0.33-0.031c0.223,0.687,0.871,1.186,1.638,1.199c-0.6,0.464-1.356,0.739-2.179,0.739c-0.142,0-0.281-0.007-0.418-0.023c0.777,0.489,1.699,0.775,2.689,0.775c3.228,0,4.991-2.63,4.991-4.913c0-0.075-0.002-0.149-0.004-0.223c0.342-0.244,0.639-0.547,0.875-0.894c-0.316,0.137-0.652,0.23-1.008,0.272C14.057,7.448,14.336,7.11,14.467,6.707 M10,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.196,0,9.407-4.211,9.407-9.406C19.406,4.805,15.195,0.594,10,0.594 M10,18.552c-4.723,0-8.551-3.829-8.551-8.552S5.277,1.449,10,1.449c4.723,0,8.551,3.829,8.551,8.551S14.723,18.552,10,18.552"></path>
+						</svg> <span class="twitter">Twitter Username</span></div>
+                        
+             <div class="marquee">
+                   <p>THIS IS A LIVE STREAM AND SHOULD NOT BE RECORDED AND/OR DISTRIBUTED ON OTHER WEBSITES WITHOUT COPYRIGHT HOLDER's CONSENT! <span class="model">PERFORMER NAME</span></p>
+               </div>    
+                   </div>
+       </div>
+<div class="clear">camgirl.cloud - DMCA bar - clearfix</div>
+</div>
+
+
+<!--
+
+- To edit the text simply change the plain text between paragraph tags <p> and </p>
+- Edit the performer name the same way/ to change the color, go to the css line .model and change the color: HEX value
+- Go to <span class="twitter">Twitter Username</span> and change the plain text between span tags with your Twitter username should look something like this  <span class="twitter">CamgirlCloud</span>
+- If you want to remove the Twitter block, simply change the class to hide instead of show
+ <div class="show"> will make the Twitter block visible
+ <div class="hide"> will make the Twitter block NOT visible
+
+Well, if you read this HTML comment, you will be able to connect the dots and implement your necessary edits as you see fit, if not, emmm.... try not to put me to work without any payment... a coffee will be nice
+https://dandesign.camgirl.cloud/sponsor-me/
+
+PS: no need to host images, both the DMCA banner and Twitter icon are SVGs so no additional hosting necessary :)
+Best regards, Dan N / Camgirl.Cloud
+
+-->
+
+</body>
+</html>
