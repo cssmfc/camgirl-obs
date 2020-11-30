@@ -79,7 +79,7 @@ To use this overlay on your stream follow the install steps suggested below
 * all resources run locally from your device (desktop/laptop)
 * the overlay is triggered manually by the model
 * overlay developed for Chaturbate webcam performers.
-* some of the graphics used by this OBS overlay are also used on [MyFreeCams profile design Army v1](https://camgirl.cloud/template/?id=62666) available for live editing on Camgirl.Cloud
+* some of the graphics used by this OBS overlay are also used on [MyFreeCams profile design Army v1](https://camgirl.cloud/template/myfreecams-design-army-v1/) available for live editing on Camgirl.Cloud
 
 Sample markup for one of the Premium lists available with this overlay
 
@@ -113,9 +113,8 @@ Each paragraph shows an editable **Premium Username** with a custom icon in fron
 
 :mailbox_with_no_mail: For questions, feedback, suggestions, feel free to contact the [support staff](https://camgirl.cloud/contact/) 
 
-
 ### Links 
 
 :link: CGC is active on social networks and other platforms:
 
-[Twitter](https://www.twitter.com/CSSMFC) | [Facebook Group](https://www.facebook.com/groups/xniteproductions/) | [YouTube](https://www.youtube.com/channel/UCbJQMNUNpK1Pt-uGyOq7iQw) | [Website](https://camgirl.cloud/) | [Reddit](https://www.reddit.com/r/CamgirlLiveEditor/) | :underage: [on Chaturbate](https://chaturbate.com/redglove/)
+[Twitter](https://www.twitter.com/CamgirlCloud) | [Facebook Group](https://www.facebook.com/groups/studio.camgirl.cloud) | [YouTube](https://www.youtube.com/channel/UCbJQMNUNpK1Pt-uGyOq7iQw) | [Website](https://camgirl.cloud/) | [Reddit](https://www.reddit.com/r/CamgirlLiveEditor/) | [XBIZ TV](https://www.xbiz.tv/channel/1479112767/CamgirlCloud/) | [Discord Server](https://discord.gg/2XvqfsJ) 
