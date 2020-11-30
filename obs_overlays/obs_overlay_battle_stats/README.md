@@ -166,4 +166,4 @@ HTML and CSS are commented
 
 :link: CGC is active on social networks and other platforms:
 
-[Twitter](https://www.twitter.com/CamgirlCloud) | [YouTube](https://www.youtube.com/channel/UCbJQMNUNpK1Pt-uGyOq7iQw) | [Website](https://camgirl.cloud/) | [Reddit](https://www.reddit.com/r/CamgirlLiveEditor/) | [Discord Server](https://discord.gg/2XvqfsJ) 
+[Twitter](https://www.twitter.com/CamgirlCloud) | [Facebook Group](https://www.facebook.com/groups/studio.camgirl.cloud) | [YouTube](https://www.youtube.com/channel/UCbJQMNUNpK1Pt-uGyOq7iQw) | [Website](https://camgirl.cloud/) | [Reddit](https://www.reddit.com/r/CamgirlLiveEditor/) | [XBIZ TV](https://www.xbiz.tv/channel/1479112767/CamgirlCloud/) | [Discord Server](https://discord.gg/2XvqfsJ) 
