@@ -22,7 +22,7 @@
 
 
 
-![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/assets/obs_battle01_thumb.jpg) | ![Cover](https://raw.githubusercontent.com/cssmfc/camgirl-obs/master/obs_overlays/obs_overlay_brb_winter/info/cover_obs_overlay_winter_theme_brb.jpg)
+![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/assets/obs_battle01_thumb.jpg) | ![Cover](none)
 ------------ | -------------
 **OBS overlay Battle of the Braves** | **OBS Overlay - BRB winter theme**
 [![OBS overlay download](https://raw.githubusercontent.com/cssmfc/obs/master/assets/download_files.png)](https://github.com/cssmfc/obs/releases/tag/v1.0.Stats) | [![OBS overlay download](https://raw.githubusercontent.com/cssmfc/obs/master/assets/download_files.png)](https://github.com/cssmfc/obs/)
