@@ -1,6 +1,6 @@
 # OBS overlay - Be Right Back / winter theme
 
-![Cover](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_topTippers/how%20to%20use/assets/obs_cover_top_tippers.jpg)
+![Cover](https://raw.githubusercontent.com/cssmfc/camgirl-obs/master/obs_overlays/obs_overlay_brb_winter/info/cover_obs_overlay_winter_theme_brb.jpg)
 
 
 ### Index
@@ -46,13 +46,13 @@ Because this OBS overlay runs local resources (from your laptop/pc) the install 
 
 1. Open **OBS** [download OBS if necessary](https://obsproject.com/)
 2. From **Sources** section click the :heavy_plus_sign: sign/icon
-![New Source](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_topTippers/how%20to%20use/assets/obs-add-new-source.jpg)
+![New Source](https://raw.githubusercontent.com/cssmfc/camgirl-obs/master/obs_overlays/obs_overlay_brb_winter/info/assets/screenshots/step1_plus_browser_option.jpg)
 
 3. Next step is to select **Browser** from available options 
-![Select Browser](https://raw.githubusercontent.com/cssmfc/obs/master/obs_overlays/obs_overlay_topTippers/how%20to%20use/assets/obs-select-source.jpg)
+![Select Browser](https://raw.githubusercontent.com/cssmfc/camgirl-obs/master/obs_overlays/obs_overlay_brb_winter/info/assets/screenshots/step2_localfile_browser_ok.jpg)
 
 ....
-[:computer: View full documentation online]()
+[:computer: View full documentation online](https://cssmfc.github.io/camgirl-obs/obs_overlays/obs_overlay_brb_winter/info/index.html)
 
 
 
@@ -66,7 +66,7 @@ Because this OBS overlay runs local resources (from your laptop/pc) the install 
 
 :memo: **Please read**
 * the overlay is not interactive, it is not triggered by tips.
-* all editing process is made via source code or **Interact** OBS interface as seen in the [presentation video]()
+* all editing process is made via source code or **Interact** OBS interface as seen in the [presentation video](https://youtu.be/FSn-HJygBKQ)
 * all resources run locally from your device (desktop/laptop)
 * the overlay is triggered manually by the model
 * overlay developed for Chaturbate webcam performers.
