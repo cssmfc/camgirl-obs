@@ -39,3 +39,6 @@
 * [OBS Overlay 10min Countdown](https://cssmfc.github.io/camgirl-obs/obs_overlays/obs_overlay_coundown/Countdown.html)
 * [OBS Overlay Top Tippers v1  - Army Theme](https://cssmfc.github.io/camgirl-obs/obs_overlays/obs_overlay_topTippers/TopTippers.html)
 * [OBS Ovelay - DMCA bar](https://cssmfc.github.io/camgirl-obs/obs_overlays/obs_dmca_bottom_bar.html)
+
+-------------
+Have suggestions, questions or feedback? Post on [community forum](https://camgirl.cloud/support/forum/download/obs-overlays/)
