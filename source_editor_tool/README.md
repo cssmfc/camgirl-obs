@@ -129,4 +129,4 @@ Enjoy
 
 :link: CGC is active on social networks and other platforms:
 
-[Twitter](https://www.twitter.com/CSSMFC) | [Facebook Group](https://www.facebook.com/groups/xniteproductions/) | [YouTube](https://www.youtube.com/channel/UCbJQMNUNpK1Pt-uGyOq7iQw) | [Website](https://camgirl.cloud/) | [Reddit](https://www.reddit.com/r/CamgirlLiveEditor/) | :octocat: [on GitHub](https://cssmfc.github.io/)
+[Twitter](https://www.twitter.com/CamgirlCloud) | [YouTube](https://www.youtube.com/c/CamgirlLiveEditor) | [Website](https://camgirl.cloud/) | [Reddit](https://www.reddit.com/r/CamgirlLiveEditor/) | :octocat: [on GitHub](https://cssmfc.github.io/)
