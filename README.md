@@ -59,6 +59,8 @@ Install instructions and full documentation along with all necessary resources p
 :mailbox_with_no_mail: For questions, feedback, suggestions, feel free to contact the [support staff](https://camgirl.cloud/contact/) 
 
 
+
+
 ### Links 
 
 :link: CGC is active on social networks and other platforms:
@@ -66,3 +68,8 @@ Install instructions and full documentation along with all necessary resources p
 ***
 
 [Twitter](https://www.twitter.com/CamgirlCloud) | [Website](https://camgirl.cloud/) |  :octocat: [on GitHub](https://cssmfc.github.io/)
+
+
+# Premium Marketerbay.com OBS Overlays
+![Premium Marketerbay.com Overlays](https://raw.githubusercontent.com/cssmfc/camgirl-obs/master/assets/mk-subcategory-obsoverlays.jpg)
+[Premium OBS Overlays](https://marketerbay.com/product-category/overlays/obs-overlay/)
