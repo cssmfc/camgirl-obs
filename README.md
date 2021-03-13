@@ -72,4 +72,5 @@ Install instructions and full documentation along with all necessary resources p
 
 # Premium Marketerbay.com OBS Overlays
 ![Premium Marketerbay.com Overlays](https://raw.githubusercontent.com/cssmfc/camgirl-obs/master/assets/mk-subcategory-obsoverlays.jpg)
-[Premium OBS Overlays](https://marketerbay.com/product-category/overlays/obs-overlay/)
+
+**[Premium OBS Overlays](https://marketerbay.com/product-category/overlays/obs-overlay/)**
