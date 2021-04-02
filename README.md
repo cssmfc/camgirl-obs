@@ -63,8 +63,10 @@ Install instructions and full documentation along with all necessary resources p
 
 ### Links 
 
-:link: CGC is active on social networks and other platforms:
+:link: CGC is active on social networks and other platforms.
+
 :link: [Marketerbay Overlays - GitHub Repo](https://mkbres.github.io/overlays/) - a colection of custom overlays and open source projects. 
+
 ***
 
 [Twitter](https://www.twitter.com/CamgirlCloud) | [Website](https://camgirl.cloud/) |  :octocat: [on GitHub](https://cssmfc.github.io/)
