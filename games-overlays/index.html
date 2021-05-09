@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Camgirl.Cloud - Camgirls Overlays</title>
+<style>
+body{width:100%;margin:0 auto;}
+*{box-sizing:border-box;}
+#mkwraper{margin:0 auto;padding:0;line-height:normal;left:0;top:0;background: repeating-linear-gradient(-55deg,#222,#222 2px,#333 2px,#333 4px);background-repeat:repeat;background-position:0 0;font-size:1.6vw;font-weight:100;font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;}
+.mkheader{display:block;width:100%;height:auto;margin:0 auto 12px auto;padding:5em 0em 5em;text-align:center;background-color:rgba(0,0,0,0.6);background-image:url(images/header.jpg);background-repeat:no-repeat;background-size:cover;background-position:center;background-attachment:fixed;}
+.mkheader span.zerohour{text-align:center;}
+.mkheader h1{display:block;width:90%;height:auto;padding:1em .5em 1em;margin:10px auto 12px auto;text-align:center;font-size:4vw;text-transform:uppercase;font-style:italic;text-shadow:0 2px 1px #000;font-weight:700;mix-blend-mode:exclusion ;}
+.text{background-color: black;color:red;mix-blend-mode:screen;padding:0;}
+.mkcontainer{margin:0px auto 12px auto;padding:2em 0em 3em;text-align:center;background-color:rgba(0,0,0,0.6);font-size:1.8rem;color:#69F;font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;}
+.mkclear:before,.mkclear:after{content:"";clear:both;display:inline-table}
+#devstuff a:link, #devstuff a:visited{color:#F96;text-decoration:none;}
+#devstuff a:hover{color:#0C9;text-decoration:none;}
+
+/* Keyword values 
+mix-blend-mode: normal;
+mix-blend-mode: multiply;
+mix-blend-mode: screen;
+mix-blend-mode: overlay;
+mix-blend-mode: darken;
+mix-blend-mode: lighten;
+mix-blend-mode: color-dodge;
+mix-blend-mode: color-burn;
+mix-blend-mode: hard-light;
+mix-blend-mode: soft-light;
+mix-blend-mode: difference;
+mix-blend-mode: exclusion;
+mix-blend-mode: hue;
+mix-blend-mode: saturation;
+mix-blend-mode: color;
+mix-blend-mode: luminosity;
+*/
+
+.xcr::-webkit-scrollbar{width:8px}
+.xcr::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);-webkit-border-radius:10px;border-radius:10px}
+.xcr::-webkit-scrollbar-thumb{-webkit-border-radius:10px;border-radius:10px;background:#09C;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.5)}
+.xcr::-webkit-scrollbar-thumb:window-inactive{background:rgba(204,0,0,.4);border:1px solid #ccc}
+.fxcr{scrollbar-color: #09C #222222;scrollbar-width: thin;}
+.mk-1{width:8.33%}
+.mk-2{width:16.66%}
+.mk-3{width:25%}
+.mk-4{width:33.33%}
+.mk-5{width:41.66%}
+.mk-6{width:50%}
+.mk-7{width:58.33%}
+.mk-8{width:66.66%}
+.mk-9{width:75%}
+.mk-10{width:83.33%}
+.mk-11{width:91.66%}
+.mk-12{width:100%}
+[class*="mk-"]{float:left;padding:15px;}
+[class*="no"]{float:left;padding:0}
+.mkclearfix{display:block;width:100%;height:1px;float:none;clear:left;margin:0 auto;}
+.mkthumnails{display:block;float:none;text-transform:uppercase;margin:0 auto;}
+.leroy{overflow:hidden;transition:ease-in-out .3s;padding-bottom:0em;}
+.leroy img{display:block;width:100%;height:auto;border-radius:10px;margin:0 auto;opacity:.7;filter: brightness(60%) contrast(110%);background-color:#000;transition:ease-in-out .3s;}
+.leroy:hover img{opacity:1;filter: brightness(110%) contrast(110%);transform: scale(1.1,1.1);background-color:#000;}
+.leroy span{display:block;width:100%;height:auto;margin:0 auto;text-align:center;overflow:hidden;border-radius:10px;border:2px solid rgba(204,0,153,0.3);transition: all .3s;}
+span.iz{margin:0 auto 18px auto;}
+.leroy:hover span.iz{display:block;width:100%;height:auto;margin:0 auto 18px auto;text-align:center;overflow:hidden;border:2px solid rgba(204,0,153,1);box-shadow:0 1px 3px #000,0 11px 18px -10px #C3C;}
+.leroy span.iz:after{content:"";display:block;width:30px;height:250px;background-color:#fff;filter:blur(25px);transform:translate(-100px,-160px) rotate(15deg);margin-bottom:-250px;border-radius:20px;transition:ease-in-out .3s;opacity:.3;mix-blend-mode: screen;}
+
+.leroy:hover span.iz:after{content:"";display:block;width:160px;height:250px;background-color:#fff;filter:blur(25px);transform:translate(320px,-160px) rotate(15deg);margin-bottom:-250px;opacity:.3;-webkit-box-reflect: below -19px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.5) 0%, transparent 50%, transparent 100%);}
+
+/* box-reflect: below 2px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.5) 0%, transparent 30%, transparent 100%); */
+.mkname,.mkbutton{font-size:14px;}
+.mkname{text-align:left;font-weight:700;}
+.mkname span{padding:.3em 0em .3em;text-align:left;text-indent:10px;border-radius:5px 0 0 5px;box-shadow:inset 0 0 2px #F69;border:none;background-color:#111;}
+
+.mkbutton{text-align:center;}
+.mkbutton span {padding:.3em;text-align:center;border-radius:0;box-shadow:none;border:none;border-radius:0 5px 5px 0;background: rgb(149,0,255);
+background: -moz-linear-gradient(0deg, rgba(149,0,255,1) 3%, rgba(236,22,224,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(149,0,255,1) 3%, rgba(236,22,224,1) 100%);
+background: linear-gradient(0deg, rgba(149,0,255,1) 3%, rgba(236,22,224,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9500ff",endColorstr="#ec16e0",GradientType=1);}
+.mkbutton span:hover{background: rgb(149,0,255);
+background: -moz-linear-gradient(0deg, rgba(149,0,255,1) 3%, rgba(236,22,224,1) 60%);
+background: -webkit-linear-gradient(0deg, rgba(149,0,255,1) 3%, rgba(236,22,224,1) 60%);
+background: linear-gradient(0deg, rgba(149,0,255,1) 3%, rgba(236,22,224,1) 60%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9500ff",endColorstr="#ec16e0",GradientType=1);}
+.mkbutton a:link, .mkbutton a:visited{display:block;width:100%;height:auto;padding:0;text-align:center;color:rgba(255,255,255,0.6);text-decoration:none;text-shadow:0 -1px 1px #999;font-suize:13px;font-weight:500;}
+.mkbutton a:hover{color:#fff;text-decoration:none;text-shadow:0 -1px 2px #999;}
+
+.mkthumnails h2.popularlevel1,.mkthumnails h2.popularlevel2{display:block;width:100%;height:auto;margin:0 auto 12px;text-align:left;color:#69F;font-size:2.7rem;font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;text-indent:12px;font-weight:600;padding:0em;border-bottom:1px solid #0CC;font-style:italic;text-shadow:0 1px 1px #fff;background: rgb(0,0,0);
+background: -moz-linear-gradient(90deg, rgba(0,0,0,0.9305115600927871) 0%, rgba(233,43,223,0) 77%);
+background: -webkit-linear-gradient(90deg, rgba(0,0,0,0.9305115600927871) 0%, rgba(233,43,223,0) 77%);
+background: linear-gradient(90deg, rgba(0,0,0,0.9305115600927871) 0%, rgba(233,43,223,0) 77%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#e92bdf",GradientType=1);line-height: normal;}
+.mkthumnails h2.popularlevel1:before{content:".";display:inline-block;width:20px;height:60px;background-color:#0CC;transform:translate(-11px,0px);margin-top:-30px;animation:showblink 3s infinite;text-align:center;color:#fff;font-style:normal;text-indent:0px;}
+.mkthumnails h2.popularlevel2:before{content:":";display:inline-block;width:20px;height:60px;background-color:#0CC;transform:translate(-11px,0px);margin-top:-30px;animation:showblink 3s infinite;text-align:center;color:#fff;font-style:normal;text-indent:0px;}
+@keyframes showblink{
+	0%{transform:translate(-11px,0px); background-color:#0CC;}
+	50%{transform:translate(-11px,0px); background-color:#906;}
+	100%{transform:translate(-11px,0px); background-color:#0CC;}
+	}
+.mkhr{display:block;width:90%;height:1px;background-color:#000;box-shadow:0 2px 3px #333;float:none;clear:left;margin:0 auto;}
+#mkinfo h3.mkheader3{font-size:2.7rem;color:#69F;font-weight:700;text-align:center;font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;}
+#mkinfo h1.mkheader1{font-size:1.7rem;color:#69F;font-weight:500;text-align:center;text-transform:uppercase;font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;}
+#mkinfo p{font-size:15px;font-weight:300;text-align:center;}
+#mkinfo .mkbutton{display:block;width:70%;height:auto;margin:20px auto 12px auto;text-align:center;float:none;clear:left;}
+#mkinfo .mkbutton a:link,#mkinfo .mkbutton a:visited{display:block;width:70%;height:auto;margin:0 auto;text-align:center;padding:.5em 1em .5em;font-size:16px;color:rgba(255,255,255,.5);text-decoration:none;text-transform:uppercase;border-radius:7px;box-shadow:0 0 3px #000;border:1px solid #0CC;background-color:#39C;transition: all .3s;}
+#mkinfo .mkbutton a:hover{background-color:#06C;color:#fff;text-decoration:none;}
+.mktextleft{text-align:left;}
+.mktextright{text-align:right;}
+.mktextcenter{text-align:center;}
+img, img.mkfluid, .mkfluid img{display:block;width:100%;height:auto;}
+.thumbmkinfo {display:block;width:80%;height:auto;margin:0 auto;text-align:center;}
+.thumbmkinfo img{display:block;width:90%;height:auto;margin:0 auto;opacity:.5;transform:translateY(5px);transition:all .3s;}
+.mkfluid:hover .thumbmkinfo img{display:block;width:90%;height:auto;margin:0 auto;opacity:1;transform:translateY(0px);filter:drop-shadow(0 0 2px #F69);}.mkfluid:hover h1.mkheader1{font-size:1.7rem;font-weight:500;text-align:center;text-transform:uppercase;color:#F69;}
+.mkgallerybanner{float:none;clear:left;padding:1em 0em 1em;}
+.mkgallerybanner a:link, .mkgallerybanner a:visited{padding:.3em 1em .3em;text-align:center;font-size:3vw;color:#F6C;text-decoration:none;background-color:#222;border-radius:7px;}
+.mkgallerybanner a:hover{background-color:#09C;color:#fff;}
+#devstuff p{font-size:15px;}
+#mkshare a:link,#mkshare a:visited{display:inline-block;padding:.3em 1em .3em;text-align:center;margin:6px auto;opacity:.5;}
+#mkshare a:hover{display:inline-block;padding:.3em 1em .3em;text-align:center;margin:6px auto;opacity:1;}
+#mkshare img.svg-icon-share-blue{width: 3em;height: 3em;}
+
+.svg-icon-share-orange {width: 3em;height: 3em;}
+.svg-icon-share-orange path,
+.svg-icon-share-orange polygon,
+.svg-icon-share-orange rect {fill: #FF6600;}
+.svg-icon-share-orange circle {stroke: #FF6600;stroke-width: 1;}
+
+.svg-icon-share-blue {width: 3em;height: 3em;}
+.svg-icon-share-blue path,
+.svg-icon-share-blue polygon,
+.svg-icon-share-blue rect {fill: #4691f6;}
+.svg-icon-share-blue circle {stroke: #4691f6;stroke-width: 1;}
+#about{background-color:#000;}
+#about h2{font-size:2rem;font-weight:500;color:#96F;}
+#about p{font-size:1.5rem;font-weight:100;color:#96F;}
+</style>
+</head>
+
+<body>
+
+<div id="mkwraper" class="mk-12 no"><!--Wrap -->
+  <div class="mkheader">
+    <span class="zerohour"><h1 class="text">The Gaming Zone</h1></span>
+  </div>
+  
+  
+  <div id="about" class="mk-12 mktextcenter">
+    <h2>Camgirl.Cloud has officially released the first batch of custom overlays for webcam performers</h2>
+    <p>Welcome to Gaming Zone. We'll post the most popular and new mini-game overlays in this index</p>
+  </div>
+  
+  
+  <div class="mk-12 no mkcontainer"><!--Container -->
+  
+  <div class="mkclear"></div>
+  
+  <!-- Thumbs -->
+    <div class="mkthumnails mk-12">
+      <div class="mkclear">
+      <h2 class="popularlevel1">Popular Level 1 Games</h2>
+             <div class="mk-3 leroy"><span class="iz"><a href="https://camgirl.cloud/template/spin-wheel-hex/" target="_blank" title="HEX Spin Wheel Game Overlay on Camgirl.Cloud"><img src="images/spinhexwheel.gif" alt="HEX Spin Wheel Game Overlay on Camgirl.Cloud"/></a></span>
+             <div class="mkclear">
+              <div class="mk-9 no mkname"><span>HEX Spin Wheel</span></div>
+              <div class="mk-3 no mkbutton"><span><a href="https://camgirl.cloud/template/spin-wheel-hex/" target="_blank" title="HEX Spin Wheel Game Overlay on Camgirl.Cloud">PLAY</a></span></div>
+             </div>
+             </div>
+             
+             <div class="mk-3 leroy"><span class="iz"><a href="https://camgirl.cloud/template/coin-flip-v1/" target="_blank" title="Flip the Coin Game Overlay on Camgirl.Cloud"><img src="images/coinflipv1.gif" alt="Flip the Coin Game Overlay on Camgirl.Cloud"/></a></span>
+             <div class="mkclear">
+              <div class="mk-9 no mkname"><span>Flip the Coin</span></div>
+              <div class="mk-3 no mkbutton"><span><a href="https://camgirl.cloud/template/coin-flip-v1/" target="_blank" title="Flip the Coin Game Overlay on Camgirl.Cloud">PLAY</a></span></div>
+             </div>
+             </div>
+             
+             <div class="mk-3 leroy"><span class="iz"><a href="https://camgirl.cloud/template/text-slot-machine/" target="_blank" title="Text Slots Game Overlay on Camgirl.Cloud"><img src="images/slottextmachine.gif" alt="Text Slots Game Overlay on Camgirl.Cloud"/></a></span>
+             <div class="mkclear">
+              <div class="mk-9 no mkname"><span>Slot Machine - Text</span></div>
+              <div class="mk-3 no mkbutton"><span><a href="https://camgirl.cloud/template/text-slot-machine/" target="_blank" title="Text Slots Game Overlay on Camgirl.Cloud">PLAY</a></span></div>
+             </div>
+             </div>
+             
+             <div class="mk-3 leroy"><span class="iz"><a href="https://camgirl.cloud/template/wheel-of-luck-overlay/" target="_blank" title="Wheel of Luck Game Overlay on Camgirl.Cloud"><img src="images/spinnwheel2.gif" alt="Wheel of Luck Game Overlay on Camgirl.Cloud"/></a></span>
+             <div class="mkclear">
+              <div class="mk-9 no mkname"><span>Wheel of Luck</span></div>
+              <div class="mk-3 no mkbutton"><span><a href="https://camgirl.cloud/template/wheel-of-luck-overlay/" target="_blank" title="Wheel of Luck Game Overlay on Camgirl.Cloud">PLAY</a></span></div>
+             </div>
+             </div>
+             
+      <div class="mkclearfix"></div>
+       </div>
+     </div><!--/ Thumbs -->
+     
+     <div class="mk-12 mkgallerybanner"><a href="https://camgirl.cloud/editor/?gallery=webcam-overlays" target="_blank" title="View All Overlays from Camgirl.cloud">VIEW ALL OVERLAYS FROM CAMGIRL.CLOUD</a></div>
+     
+     <!-- Thumbs 2-->
+    <div class="mkthumnails mk-12">
+      <div class="mkclear">
+      <h2 class="popularlevel2">Soon to be added Level 2 Games</h2>
+             <div class="mk-3 leroy"><span class="iz"><a href="#" target="_blank" title="Camgirl.Cloud Overlays"><img src="images/tbacgc.jpg" alt="Camgirl.Cloud Overlays"/></a></span>
+             <div class="mkclear">
+              <div class="mk-9 no mkname"><span>Game Title</span></div>
+              <div class="mk-3 no mkbutton"><span><a href="#" target="_blank" title="Camgirl.Cloud Overlays">PLAY</a></span></div>
+             </div>
+             </div>
+             
+             <div class="mk-3 leroy"><span class="iz"><a href="#" target="_blank" title="Camgirl.Cloud Overlays"><img src="images/tbacgc.jpg" alt="Camgirl.Cloud Overlays"/></a></span>
+             <div class="mkclear">
+              <div class="mk-9 no mkname"><span>Game Title</span></div>
+              <div class="mk-3 no mkbutton"><span><a href="#" target="_blank" title="Camgirl.Cloud Overlays">PLAY</a></span></div>
+             </div>
+             </div>
+             
+             <div class="mk-3 leroy"><span class="iz"><a href="#" target="_blank" title="Camgirl.Cloud Overlays"><img src="images/tbacgc.jpg" alt="Camgirl.Cloud Overlays"/></a></span>
+             <div class="mkclear">
+              <div class="mk-9 no mkname"><span>Game Title</span></div>
+              <div class="mk-3 no mkbutton"><span><a href="#" target="_blank" title="Camgirl.Cloud Overlays">PLAY</a></span></div>
+             </div>
+             </div>
+             
+             <div class="mk-3 leroy"><span class="iz"><a href="#" target="_blank" title="Camgirl.Cloud Overlays"><img src="images/tbacgc.jpg" alt="Camgirl.Cloud Overlays"/></a></span>
+             <div class="mkclear">
+              <div class="mk-9 no mkname"><span>Game Title</span></div>
+              <div class="mk-3 no mkbutton"><span><a href="#" target="_blank" title="Camgirl.Cloud Overlays">PLAY</a></span></div>
+             </div>
+             </div>
+             
+      <div class="mkclearfix"></div>
+       </div>
+     </div><!--/ Thumbs 2-->
+     
+     
+     <div class="mkhr"></div>
+      
+      
+      
+   
+      
+      
+      
+  </div><!--/ Container -->
+  
+  
+<div class="mk-12 no mkcontainer"><!--Container 2-->  
+  <!-- Dinfo -->    
+    <div id="mkinfo" class="mk-12">
+      <h3 class="mkheader3">WHERE TO START?</h3>
+      <div class="mkclear">
+      
+        <div class="mk-4 mktextcenter mkfluid">
+        <a href="https://camgirl.cloud/plan/overlay-basic/" target="_blank" class="thumbmkinfo" title="Access overlays on Camgirl.Cloud"><img src="images/access-thumb.png" alt="Access overlays on Camgirl.Cloud"/></a>
+          <h1 class="mkheader1">Access to Overlays</h1>
+          <div class="mkhr"></div>
+          <p>To be able to access Games overlays a susbcription is needed.<br>Go to Plan's page to unlock the licesne</p>
+          <div class="mkhr"></div>
+          <div class="mk-12 no mkbutton"><a href="https://camgirl.cloud/plan/overlay-basic/" target="_blank" title="Access overlays on Camgirl.Cloud">CLICK HERE</a></div>
+        </div>
+        
+        <div class="mk-4 mktextcenter mkfluid">
+        <a href="https://camgirl.cloud/plan/overlay-basic/" target="_blank" class="thumbmkinfo" title="How To Edit Overlays on Camgirl.Cloud"><img src="images/edit-thumb.png" alt="How To Edit Overlays on Camgirl.Cloud"/></a>
+          <h1 class="mkheader1">Edit Overlays</h1>
+          <div class="mkhr"></div>
+          <p>To Edit and customize overlays our platform is using two environments.<br>The Editor tool and Controller tool</p>
+          <div class="mkhr"></div>
+          <div class="mk no mkbutton"><a href="https://camgirl.cloud/docs/overlays/" target="_blank" title="How To Edit Overlays on Camgirl.Cloud">CLICK HERE</a></div>
+        </div>
+        
+        <div class="mk-4 mktextcenter mkfluid">
+         <a href="https://camgirl.cloud/editor/?gallery=webcam-overlays" target="_blank" class="thumbmkinfo" title="Use of Camgirl.Cloud overlays"><img src="images/use-thumb.png" alt="Use of Camgirl.Cloud overlays"/></a>
+          <h1 class="mkheader1">Use of Overlays</h1>
+          <div class="mkhr"></div>
+          <p>All overlays come with install instructions and documentation.<br>Select the overlay you want to use from our Gallery</p>
+          <div class="mkhr"></div>
+          <div class="mk no mkbutton"><a href="https://camgirl.cloud/editor/?gallery=webcam-overlays" target="_blank" title="Use of Camgirl.Cloud overlays">CLICK HERE</a></div>
+        </div>
+        
+      </div>
+    </div>  
+  <!--/ Dinfo -->   
+  
+  </div><!--/ Container 2--> 
+  
+  
+ <div class="mk-12 mkcontainer"><!--Container 3--> 
+ 
+ <div id="devstuff" class="mk-12 mktextcenter"><p>for questions, suggestions or feedback, post on <a href="https://camgirl.cloud/support/forum/templates-categories/overlays/" target="_blank" title="Support Forum Community Camgirl.Cloud">support forum</a></p>
+ <p>if you want to develop mini-games for this platform, <a href="https://forfun.camgirl.cloud/contact/" target="_blank" title="Contact Camgirl.Cloud">contact ForFun</a> dev department</p></div>
+ 
+ 
+ 
+ <div id="mkshare" class="mk-12 mktextcenter">
+ <div class="mkhr"></div>
+ <p>Share this:</p>
+ <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Overlay%20Games%20for%20webcam%20performers%20only%20on%20@CamgirlCloud%20%21+https%3A%2F%2Fforfun.camgirl.cloud%2F"><svg class="svg-icon-share-blue" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="none" d="M18.258,3.266c-0.693,0.405-1.46,0.698-2.277,0.857c-0.653-0.686-1.586-1.115-2.618-1.115c-1.98,0-3.586,1.581-3.586,3.53c0,0.276,0.031,0.545,0.092,0.805C6.888,7.195,4.245,5.79,2.476,3.654C2.167,4.176,1.99,4.781,1.99,5.429c0,1.224,0.633,2.305,1.596,2.938C2.999,8.349,2.445,8.19,1.961,7.925C1.96,7.94,1.96,7.954,1.96,7.97c0,1.71,1.237,3.138,2.877,3.462c-0.301,0.08-0.617,0.123-0.945,0.123c-0.23,0-0.456-0.021-0.674-0.062c0.456,1.402,1.781,2.422,3.35,2.451c-1.228,0.947-2.773,1.512-4.454,1.512c-0.291,0-0.575-0.016-0.855-0.049c1.588,1,3.473,1.586,5.498,1.586c6.598,0,10.205-5.379,10.205-10.045c0-0.153-0.003-0.305-0.01-0.456c0.7-0.499,1.308-1.12,1.789-1.827c-0.644,0.28-1.334,0.469-2.06,0.555C17.422,4.782,17.99,4.091,18.258,3.266"></path></svg></a> <a href="https://www.reddit.com/submit?url=https://camgirl.cloud/editor/?gallery=webcam-overlays&title=Camgirl%20Live%20Editor%20-%20online%20tool%20for%20camgirls%20-%20custom%20overlays"><svg class="svg-icon-share-orange" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 11.779c0-1.459-1.192-2.645-2.657-2.645-.715 0-1.363.286-1.84.746-1.81-1.191-4.259-1.949-6.971-2.046l1.483-4.669 4.016.941-.006.058c0 1.193.975 2.163 2.174 2.163 1.198 0 2.172-.97 2.172-2.163s-.975-2.164-2.172-2.164c-.92 0-1.704.574-2.021 1.379l-4.329-1.015c-.189-.046-.381.063-.44.249l-1.654 5.207c-2.838.034-5.409.798-7.3 2.025-.474-.438-1.103-.712-1.799-.712-1.465 0-2.656 1.187-2.656 2.646 0 .97.533 1.811 1.317 2.271-.052.282-.086.567-.086.857 0 3.911 4.808 7.093 10.719 7.093s10.72-3.182 10.72-7.093c0-.274-.029-.544-.075-.81.832-.447 1.405-1.312 1.405-2.318zm-17.224 1.816c0-.868.71-1.575 1.582-1.575.872 0 1.581.707 1.581 1.575s-.709 1.574-1.581 1.574-1.582-.706-1.582-1.574zm9.061 4.669c-.797.793-2.048 1.179-3.824 1.179l-.013-.003-.013.003c-1.777 0-3.028-.386-3.824-1.179-.145-.144-.145-.379 0-.523.145-.145.381-.145.526 0 .65.647 1.729.961 3.298.961l.013.003.013-.003c1.569 0 2.648-.315 3.298-.962.145-.145.381-.144.526 0 .145.145.145.379 0 .524zm-.189-3.095c-.872 0-1.581-.706-1.581-1.574 0-.868.709-1.575 1.581-1.575s1.581.707 1.581 1.575-.709 1.574-1.581 1.574z"/></svg></a>
+ </div>
+ 
+ 
+ 
+  
+ </div><!--/ Container 3-->   
+  
+</div><!--/ Wrap -->
+
+</body>
+</html>
